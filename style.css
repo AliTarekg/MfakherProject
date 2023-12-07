@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@700&display=swap');
 
 * {
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -140,11 +140,6 @@ body {
 
 
 
-.colo {
-    border-style: solid;
-    height: 100%;
-    padding: 20px;
-}
 
 /* Custom CSS to align navbar-text to the right */
 .navbar {
@@ -222,6 +217,7 @@ body {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    margin-left: auto;
 }
 
 .logobutton:hover {
@@ -237,30 +233,59 @@ body {
 #home {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
+    background-color: #292c55;
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
     flex-wrap: nowrap;
+    line-height: 1.5;
+    box-sizing: border-box;
+
+}
+
+.pic {
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+    width: 30%;
+    transition: transform 1.5s;
+    /* Add a smooth transition effect */
+
+}
+
+.rowy {
+    padding: 60px 20px;
+}
+
+.pic:hover img {
+    transform: rotateY(180deg);
+    /* Rotate the image 180 degrees on hover */
 }
 
 .rectangle {
-    background-image: url(Assets/rounded-rectangle-filled-svgrepo-com.svg);
     opacity: 0;
     animation: slideInFromRight 1s forwards;
     animation-delay: 2s;
-    margin-top: auto;
+    /* Adjust the margin-top as needed */
     font-family: 'Amiri', serif;
-    height: 100%;
-    line-height: 1.5;
+    height: 100vh;
+    width: 70%;
+
+    display: flex;
     font-weight: 700;
-
-
+    /* Add this line to hide overflow content */
+    border-radius: 0 0 50% 0/ 50% 0 0 50%;
+    /* Create wavy shape at top-right and bottom-left corners */
 }
 
-.intro {
-
-    color: #ff0000;
-    text-align: right;
+.rectangle .intro h2 {
+    color: #ffffff;
+    box-sizing: border-box;
+    direction: rtl;
+    line-height: 2;
+    font-size: 2rem;
+    letter-spacing: 1px;
 }
 
 /*
@@ -276,12 +301,6 @@ h1 {
 
 */
 
-.pic {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    align-items: center;
-}
 
 @keyframes slideInFromRight {
     from {
@@ -296,7 +315,7 @@ h1 {
 }
 
 .our-work {
-    height: auto;
+    max-height: auto;
 }
 
 /* Customize Bootstrap carousel control buttons */
@@ -528,7 +547,7 @@ h1 {
 }
 
 
-@media only screen and (max-width: 979px) {
+@media only screen and (max-width: 991.98px) {
     .ag-courses_item {
         -ms-flex-preferred-size: calc(50% - 30px);
         flex-basis: calc(50% - 30px);
@@ -538,17 +557,39 @@ h1 {
         font-size: 24px;
     }
 
+    .rowy {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar-toggler.collapsed {
+        position: absolute;
+        margin-right: auto;
+        /* Adjust the left position as needed */
+        /* Adjust the top position as needed */
+    }
+
+    .pic img {
+        text-align: center;
+        height: 30vh;
+        /* Ensure the image doesn't overflow */
+        /* Maintain aspect ratio */
+    }
+
     .rectangle {
-        display: none;
+        width: 100%;
+        /* Adjust the width as needed */
+        height: auto;
+        padding: 1rem 1rem;
     }
 
-    .pic {
-        justify-content: flex-start;
+    .rectangle .intro h2 {
+        font-size: 1rem;
     }
-
 
     #home {
-        height: 100vh;
+        height: 90vh;
     }
 
     .rowy {
@@ -563,14 +604,46 @@ h1 {
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.98px) {
     .ag-format-container {
         width: 96%;
     }
 
+    .rowy {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px 10px;
+    }
+
+    .pic img {
+        text-align: center;
+        height: 30vh;
+        /* Ensure the image doesn't overflow */
+        /* Maintain aspect ratio */
+    }
+
+    .rectangle {
+        width: 100%;
+        /* Adjust the width as needed */
+        height: auto;
+        padding: 1rem 1rem;
+    }
+
+    .rectangle .intro h2 {
+        font-size: 1rem;
+    }
+
+
 }
 
-@media only screen and (max-width: 639px) {
+.pic {
+    order: -1;
+}
+
+
+
+@media only screen and (max-width: 575.98px) {
     .ag-courses_item {
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -592,17 +665,37 @@ h1 {
     }
 }
 
+@media only screen and (max-width: 490px) {
+    #home {
+        height: 100vh;
+    }
 
+    .pic {
+        height: 30vh;
+        width: 80%;
+    }
+
+    .rectangle {
+        height: 70vh;
+    }
+
+    .rectangle .intro h2 {
+        font-size: 1rem;
+        overflow-x: auto;
+    }
+
+
+}
 
 @keyframes fadeIn {
     0% {
         opacity: 0;
-        transform: translateX(-20px);
+        transform: translateX(-100%);
     }
 
     100% {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateX(0%);
     }
 }
 
