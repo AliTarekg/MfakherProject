@@ -593,6 +593,21 @@ h1 {
         padding: 10px;
     }
 
+    .navbar-brand {
+        display: none;
+        /* Hide the navbar brand */
+    }
+
+    .navbar-toggler {
+        order: 0;
+        /* Set the order to 0 (move to the beginning) */
+    }
+
+    .navbar-collapse {
+        order: -1;
+        /* Set the order to -1 (move to the beginning) */
+    }
+
     .navbar-nav .nav-item .nav-link {
         color: #000000;
     }
