@@ -21,45 +21,46 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-light navbar-expand-lg sticky-md-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                </a>
-                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <nav class="navbar navbar-light navbar-expand-lg sticky-md-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+            </a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <div class="collapse navbar-collapse " id="navbarNav">
-                    <ul class="navbar-nav mx-auto ">
-                        <li class="nav-item">
-                            <a class="nav-link " href="#home">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#carouselExampleCaptions">OUR WORK</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#ourServices">OUR SERVICES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT US</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#lastcontainer">OUR CLIENTS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#lastcontainer">CONTACT US</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="signout-container">
-                    <button class="btn logobutton" type="button" id="logobutton">مفاخر
-                    </button>
-                </div>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav mx-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#home">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ourWork">OUR WORK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ourServices">OUR SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">OUR CLIENTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lastcontainer">CONTACT US</a>
+                    </li>
+                </ul>
             </div>
+            <div class="signout-container">
+                <button class="btn logobutton" type="button" id="logobutton">مفاخر
+                </button>
             </div>
-        </nav>
+        </div>
+        </div>
+    </nav>
+    <header>
+
         <div id='home'>
             <div class=" row rowy row-cols-2 ">
                 <div class="col pic">
@@ -80,8 +81,10 @@
                             بالاسس
                             الفنيه المبتكره بما يلبي تطلعات الجهات المنظمه </h2>
                         <div class="contactContainer">
-                            <button class="Contactbutton" type="button" id="#">تواصل معنا
-                            </button>
+                            <a href="#ourWork">
+                                <button class="Contactbutton" type="button" id="#">تواصل معنا
+                                </button>
+                            </a>
                         </div>
                     </div>
 
@@ -91,270 +94,276 @@
         </div>
 
     </header>
-
-    <div id="carouselExampleCaptions" class="carousel slide container-fluid mt-5 our-work">
-
-        <div class="carousel-indicators" id="firstContainer">
-
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="Assets/egypt-sky-and-nile-river-and-green-views-0 (1).jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Our Work</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+    <main>
+        <section id="ourWork" class="text-center">
+            <div class="workTitle">
+                <h1>بعض الصور من اعمالنا</h1>
+            </div>
+            <div id="carouselExampleCaptions" class="carousel slide container-fluid  our-work">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="Assets/1500x500.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Our Work</h1>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Assets/1500x500.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Our Work</h1>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Assets/1500x500.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Our Work</h1>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="Assets/egypt-sky-and-nile-river-and-green-views-0 (1).jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Our Work</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="Assets/egypt-sky-and-nile-river-and-green-views-0 (1).jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Our Work</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    <div class="row container-fluid" id="ourServices">
-        <div class="ag-format-container">
-            <div class="ag-courses_box">
-                <h1>SERVICES</h1>
+        </section>
+        <section>
+            <div class="row container-fluid" id="ourServices">
+                <div class="ag-format-container">
+                    <div class="ag-courses_box">
+                        <h1>SERVICES</h1>
 
-                <div class="owl-carousel secondry-owl">
-                    <div class="ag-courses_item item8">
-                        <a href="#" class="ag-courses-item_link">
-                            <div class="ag-courses-item_bg"></div>
+                        <div class="owl-carousel secondry-owl">
+                            <div class="ag-courses_item item8">
+                                <a href="#" class="ag-courses-item_link">
+                                    <div class="ag-courses-item_bg"></div>
 
-                            <div class="ag-courses-item_title">
-                                Full-Stack
+                                    <div class="ag-courses-item_title">
+                                        Full-Stack
+                                    </div>
+
+                                    <div class="ag-courses-item_date-box">
+                                        Start:
+                                        <span class="ag-courses-item_date">
+                                            04.11.2022
+                                        </span>
+                                    </div>
+                                </a>
                             </div>
 
-                            <div class="ag-courses-item_date-box">
-                                Start:
-                                <span class="ag-courses-item_date">
-                                    04.11.2022
-                                </span>
-                            </div>
-                        </a>
-                    </div>
+                            <div class="ag-courses_item item7">
+                                <a href="#" class="ag-courses-item_link">
+                                    <div class="ag-courses-item_bg"></div>
 
-                    <div class="ag-courses_item item7">
-                        <a href="#" class="ag-courses-item_link">
-                            <div class="ag-courses-item_bg"></div>
+                                    <div class="ag-courses-item_title">
+                                        Python
+                                    </div>
 
-                            <div class="ag-courses-item_title">
-                                Python
-                            </div>
-
-                            <div class="ag-courses-item_date-box">
-                                Start:
-                                <span class="ag-courses-item_date">
-                                    04.11.2022
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="ag-courses_item item1">
-                        <a href="#" class="ag-courses-item_link">
-                            <div class="ag-courses-item_bg"></div>
-
-                            <div class="ag-courses-item_title">
-                                Java script
+                                    <div class="ag-courses-item_date-box">
+                                        Start:
+                                        <span class="ag-courses-item_date">
+                                            04.11.2022
+                                        </span>
+                                    </div>
+                                </a>
                             </div>
 
-                            <div class="ag-courses-item_date-box">
-                                Start:
-                                <span class="ag-courses-item_date">
-                                    04.11.2022
-                                </span>
-                            </div>
-                        </a>
-                    </div>
+                            <div class="ag-courses_item item1">
+                                <a href="#" class="ag-courses-item_link">
+                                    <div class="ag-courses-item_bg"></div>
 
-                    <div class="ag-courses_item item2">
-                        <a href="#" class="ag-courses-item_link">
-                            <div class="ag-courses-item_bg"></div>
+                                    <div class="ag-courses-item_title">
+                                        Java script
+                                    </div>
 
-                            <div class="ag-courses-item_title">
-                                Graphic Design
-                            </div>
-
-                            <div class="ag-courses-item_date-box">
-                                Start:
-                                <span class="ag-courses-item_date">
-                                    04.11.2022
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="ag-courses_item item3">
-                        <a href="#" class="ag-courses-item_link">
-                            <div class="ag-courses-item_bg"></div>
-
-                            <div class="ag-courses-item_title">
-                                Motion Design
+                                    <div class="ag-courses-item_date-box">
+                                        Start:
+                                        <span class="ag-courses-item_date">
+                                            04.11.2022
+                                        </span>
+                                    </div>
+                                </a>
                             </div>
 
-                            <div class="ag-courses-item_date-box">
-                                Start:
-                                <span class="ag-courses-item_date">
-                                    30.11.2022
-                                </span>
-                            </div>
-                        </a>
-                    </div>
+                            <div class="ag-courses_item item2">
+                                <a href="#" class="ag-courses-item_link">
+                                    <div class="ag-courses-item_bg"></div>
 
-                    <div class="ag-courses_item item4">
-                        <a href="#" class="ag-courses-item_link">
-                            <div class="ag-courses-item_bg"></div>
+                                    <div class="ag-courses-item_title">
+                                        Graphic Design
+                                    </div>
 
-                            <div class="ag-courses-item_title">
-                                Social media
-                            </div>
-                            <div class="ag-courses-item_date-box">
-                                Start:
-                                <span class="ag-courses-item_date">
-                                    30.11.2022
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="ag-courses_item item5">
-                        <a href="#" class="ag-courses-item_link">
-                            <div class="ag-courses-item_bg">
-                            </div>
-                            <div class="ag-courses-item_title">
-                                Digital Marketing
-                            </div>
-                            <div class="ag-courses-item_date-box">
-                                Start:
-                                <span class="ag-courses-item_date">
-                                    30.11.2022
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="ag-courses_item item6">
-                        <a href="#" class="ag-courses-item_link">
-                            <div class="ag-courses-item_bg"></div>
-
-                            <div class="ag-courses-item_title">
-                                Interior Design
+                                    <div class="ag-courses-item_date-box">
+                                        Start:
+                                        <span class="ag-courses-item_date">
+                                            04.11.2022
+                                        </span>
+                                    </div>
+                                </a>
                             </div>
 
-                            <div class="ag-courses-item_date-box">
-                                Start:
-                                <span class="ag-courses-item_date">
-                                    31.10.2022
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="ag-courses_item item4">
-                        <a href="#" class="ag-courses-item_link">
-                            <div class="ag-courses-item_bg"></div>
+                            <div class="ag-courses_item item3">
+                                <a href="#" class="ag-courses-item_link">
+                                    <div class="ag-courses-item_bg"></div>
 
-                            <div class="ag-courses-item_title">
-                                Social media
-                            </div>
-                            <div class="ag-courses-item_date-box">
-                                Start:
-                                <span class="ag-courses-item_date">
-                                    30.11.2022
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="ag-courses_item item4">
-                        <a href="#" class="ag-courses-item_link">
-                            <div class="ag-courses-item_bg"></div>
+                                    <div class="ag-courses-item_title">
+                                        Motion Design
+                                    </div>
 
-                            <div class="ag-courses-item_title">
-                                Social media
+                                    <div class="ag-courses-item_date-box">
+                                        Start:
+                                        <span class="ag-courses-item_date">
+                                            30.11.2022
+                                        </span>
+                                    </div>
+                                </a>
                             </div>
-                            <div class="ag-courses-item_date-box">
-                                Start:
-                                <span class="ag-courses-item_date">
-                                    30.11.2022
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="ag-courses_item item4">
-                        <a href="#" class="ag-courses-item_link">
-                            <div class="ag-courses-item_bg"></div>
 
-                            <div class="ag-courses-item_title">
-                                Social media
-                            </div>
-                            <div class="ag-courses-item_date-box">
-                                Start:
-                                <span class="ag-courses-item_date">
-                                    30.11.2022
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="ag-courses_item item4">
-                        <a href="#" class="ag-courses-item_link">
-                            <div class="ag-courses-item_bg"></div>
+                            <div class="ag-courses_item item4">
+                                <a href="#" class="ag-courses-item_link">
+                                    <div class="ag-courses-item_bg"></div>
 
-                            <div class="ag-courses-item_title">
-                                Social media
+                                    <div class="ag-courses-item_title">
+                                        Social media
+                                    </div>
+                                    <div class="ag-courses-item_date-box">
+                                        Start:
+                                        <span class="ag-courses-item_date">
+                                            30.11.2022
+                                        </span>
+                                    </div>
+                                </a>
                             </div>
-                            <div class="ag-courses-item_date-box">
-                                Start:
-                                <span class="ag-courses-item_date">
-                                    30.11.2022
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="ag-courses_item item4">
-                        <a href="#" class="ag-courses-item_link">
-                            <div class="ag-courses-item_bg"></div>
 
-                            <div class="ag-courses-item_title">
-                                Social media
+                            <div class="ag-courses_item item5">
+                                <a href="#" class="ag-courses-item_link">
+                                    <div class="ag-courses-item_bg">
+                                    </div>
+                                    <div class="ag-courses-item_title">
+                                        Digital Marketing
+                                    </div>
+                                    <div class="ag-courses-item_date-box">
+                                        Start:
+                                        <span class="ag-courses-item_date">
+                                            30.11.2022
+                                        </span>
+                                    </div>
+                                </a>
                             </div>
-                            <div class="ag-courses-item_date-box">
-                                Start:
-                                <span class="ag-courses-item_date">
-                                    30.11.2022
-                                </span>
+
+                            <div class="ag-courses_item item6">
+                                <a href="#" class="ag-courses-item_link">
+                                    <div class="ag-courses-item_bg"></div>
+
+                                    <div class="ag-courses-item_title">
+                                        Interior Design
+                                    </div>
+
+                                    <div class="ag-courses-item_date-box">
+                                        Start:
+                                        <span class="ag-courses-item_date">
+                                            31.10.2022
+                                        </span>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
+                            <div class="ag-courses_item item4">
+                                <a href="#" class="ag-courses-item_link">
+                                    <div class="ag-courses-item_bg"></div>
+
+                                    <div class="ag-courses-item_title">
+                                        Social media
+                                    </div>
+                                    <div class="ag-courses-item_date-box">
+                                        Start:
+                                        <span class="ag-courses-item_date">
+                                            30.11.2022
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="ag-courses_item item4">
+                                <a href="#" class="ag-courses-item_link">
+                                    <div class="ag-courses-item_bg"></div>
+
+                                    <div class="ag-courses-item_title">
+                                        Social media
+                                    </div>
+                                    <div class="ag-courses-item_date-box">
+                                        Start:
+                                        <span class="ag-courses-item_date">
+                                            30.11.2022
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="ag-courses_item item4">
+                                <a href="#" class="ag-courses-item_link">
+                                    <div class="ag-courses-item_bg"></div>
+
+                                    <div class="ag-courses-item_title">
+                                        Social media
+                                    </div>
+                                    <div class="ag-courses-item_date-box">
+                                        Start:
+                                        <span class="ag-courses-item_date">
+                                            30.11.2022
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="ag-courses_item item4">
+                                <a href="#" class="ag-courses-item_link">
+                                    <div class="ag-courses-item_bg"></div>
+
+                                    <div class="ag-courses-item_title">
+                                        Social media
+                                    </div>
+                                    <div class="ag-courses-item_date-box">
+                                        Start:
+                                        <span class="ag-courses-item_date">
+                                            30.11.2022
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="ag-courses_item item4">
+                                <a href="#" class="ag-courses-item_link">
+                                    <div class="ag-courses-item_bg"></div>
+
+                                    <div class="ag-courses-item_title">
+                                        Social media
+                                    </div>
+                                    <div class="ag-courses-item_date-box">
+                                        Start:
+                                        <span class="ag-courses-item_date">
+                                            30.11.2022
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
     <!--
     <div class="cardcontainer ">
         <div class="card">
