@@ -1,18 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Arima+Madurai:300");
 @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@700&display=swap');
 
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    margin: 0;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: aliceblue;
-    overflow-x: hidden;
 
-}
 
 .row {
     --bs-gutter-x: 0;
@@ -129,14 +131,16 @@ body {
 
 }
 
-.rowy {
-    padding: 5% 1%;
-}
-
 .pic:hover img {
     transform: rotateY(180deg);
     /* Rotate the image 180 degrees on hover */
 }
+
+.rowy {
+    padding: 5% 1%;
+}
+
+
 
 .rectangle {
     opacity: 0;
@@ -163,17 +167,45 @@ body {
     letter-spacing: 1px;
 }
 
-#home button {   
-    
-     /* Adjust the margin as needed */
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
+
+
+.Contactbutton {
+    background-color: #c3a463;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(239, 239, 239, 0.2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: #e3e3e3;
     cursor: pointer;
+    font-family: 'Amiri', serif;
+    font-size: 2rem;
+    line-height: 1.2;
+    outline: none;
+    padding: 6px 6px;
+    text-decoration: none;
+    transition: all 435ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.Contactbutton:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+    color: #04011c;
 }
 
+.Contactbutton:focus {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
 /*
 
 .buton {
@@ -346,12 +378,11 @@ h1 {
 
 /* Optional: Adjust the position of the control buttons */
 .carousel-control-prev {
-    left: -30px;
+
     /* Adjust the left position */
 }
 
 .carousel-control-next {
-    right: -30px;
     /* Adjust the right position */
 }
 
@@ -630,9 +661,7 @@ h1 {
 
     .rowy {
         flex-wrap: nowrap;
-        justify-content: space-evenly;
-        align-self: baseline;
-        padding: 10% 1%;
+        padding: 5% 1%;
     }
 
     .logo-container {
@@ -717,16 +746,23 @@ h1 {
     }
 
     .rectangle {
-        height: 70vh;
+        height: auto;
     }
 
     .rectangle .intro h2 {
         font-size: 1rem;
     }
-.rowy{
-    padding: 7% 2%;
+
+    .rowy {
+        padding: 5% 2%;
+    }
+
 }
 
+@media only screen and (min-width: 1201px) {
+    .pic {
+        height: 30vh;
+    }
 }
 
 @keyframes fadeIn {
