@@ -124,24 +124,41 @@ body {
 .pic {
     display: flex;
     justify-content: center;
-    height: 40vh;
+    height: 35vh;
     width: 30%;
-    transition: transform 1.5s;
-    /* Add a smooth transition effect */
-
 }
 
-.pic:hover img {
-    transform: rotateY(180deg);
-    /* Rotate the image 180 degrees on hover */
-}
 
 .rowy {
     padding: 5% 1%;
     height: auto;
 }
 
+.hovery {
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    transition: all 435ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
 
+.hovery:hover {
+    box-shadow: rgba(233, 233, 233, 0.927) 2px 8px 8px -5px;
+    transform: translate3d(3px, 6px, 0);
+    color: #fffcfc;
+}
+
+.hovery:focus {
+    box-shadow: #ffffff;
+}
 
 .rectangle {
     opacity: 0;
@@ -353,7 +370,6 @@ h1 {
 
 
 #ourWork {
-    margin: 15% 0;
     height: auto;
 
 }
@@ -363,16 +379,22 @@ h1 {
     flex-direction: column;
     align-items: center;
     height: auto;
-    width: 90%;
 }
 
-.workTitle h1 {
-    margin: 10% 0;
+/*.workTitle h1 {
     font-family: 'Amiri', serif;
     font-weight: 700;
     font-size: 3rem;
     color: #16425B;
-    padding: 10px 10px;
+    padding: 1rem 1rem;
+}
+*/
+.workTitle h2 {
+    font-family: 'Amiri', serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #16425B;
+    padding: 2rem 2rem;
 }
 
 .carousel-inner {
@@ -418,9 +440,8 @@ h1 {
     /* Set your desired text color */
     border: none;
     /* Remove the default border */
-    border-radius: 50%;
     width: 50px;
-    padding: 20px;
+    padding: 4px;
     /* Make it circular if desired */
     /* Adjust padding as needed */
 }
@@ -725,6 +746,10 @@ h1 {
         display: none;
         /* Hide the container on screens less than 960px */
     }
+
+    .workTitle h2 {
+        font-size: 2rem;
+    }
 }
 
 @media only screen and (max-width: 767.98px) {
@@ -743,6 +768,15 @@ h1 {
         height: 30vh;
         /* Ensure the image doesn't overflow */
         /* Maintain aspect ratio */
+    }
+
+    .carousel-item img {
+        height: 35vh;
+    }
+
+    .workTitle h1 {
+        font-size: 2rem;
+        margin: 5%;
     }
 
     .rectangle {
@@ -766,6 +800,10 @@ h1 {
     .ag-courses_item {
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    }
+
+    .workTitle h2 {
+        font-size: 1.5rem;
     }
 
     .ag-courses-item_title {
@@ -804,6 +842,7 @@ h1 {
 
     .rectangle {
         height: auto;
+        padding: 0;
     }
 
     .rectangle .intro h2 {
@@ -813,6 +852,7 @@ h1 {
     .rowy {
         padding: 5% 2%;
     }
+
 
 }
 

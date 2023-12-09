@@ -63,7 +63,7 @@
 
         <div id='home'>
             <div class=" row rowy row-cols-2 ">
-                <div class="col pic">
+                <div class="col pic hovery">
                     <div class="pic">
                         <img class="animate-img" src="Assets/logo.jpg" alt="">
                     </div>
@@ -97,7 +97,9 @@
     <main>
         <section id="ourWork" class="text-center">
             <div class="workTitle">
-                <h1>بعض الصور من اعمالنا</h1>
+                <h1 style="visibility: hidden;">بعض الصور من اعمالنا</h1>
+                <h2> بعض اعمالنا السابقه في مجالاتنا المختلفه</h2>
+
             </div>
             <div id="carouselExampleCaptions" class="carousel slide container-fluid  our-work">
                 <div class="carousel-indicators">
@@ -483,6 +485,22 @@
                         items: 3
                     }
                 },
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector('.nav-link').addEventListener('click', function (e) {
+                e.preventDefault();
+
+                var targetSection = document.querySelector(this.getAttribute('href'));
+
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
             });
         });
     </script>
