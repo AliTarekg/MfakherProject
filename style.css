@@ -79,7 +79,6 @@ body {
     border-style: solid;
     border-width: 2px;
     box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
-    box-sizing: border-box;
     color: #292c55;
     cursor: pointer;
     display: inline-block;
@@ -120,7 +119,6 @@ body {
     background-attachment: fixed;
     flex-wrap: wrap;
     line-height: 1.5;
-    box-sizing: border-box;
 }
 
 .pic {
@@ -138,7 +136,6 @@ body {
 
 .hovery {
     border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
-    box-sizing: border-box;
     cursor: pointer;
     outline: none;
     text-decoration: none;
@@ -184,7 +181,6 @@ body {
 
 .rectangle .intro h2 {
     color: #ffffff;
-    box-sizing: border-box;
     direction: rtl;
     line-height: 2;
     font-size: 2rem;
@@ -203,7 +199,6 @@ body {
     border-style: solid;
     border-width: 2px;
     box-shadow: rgba(239, 239, 239, 0.2) 15px 28px 25px -18px;
-    box-sizing: border-box;
     color: #e3e3e3;
     cursor: pointer;
     font-family: 'Amiri', serif;
@@ -544,7 +539,6 @@ h1 {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 
-    padding: 50px 0;
 }
 
 .somework {
@@ -842,11 +836,49 @@ h1 {
     }
 }
 
+/* Add this CSS to your existing stylesheet or in a style tag in the head section */
+
+.owl-carousel.caro2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.owl-carousel.caro2 .item {
+    /* Set the width of each carousel item */
+    text-align: center;
+}
+
+.owl-carousel.caro2 .item img {
+    max-width: 100%;
+    /* Ensure images don't exceed the width of the container */
+    height: 40vh;
+    /* Maintain the aspect ratio of the images */
+    border: 1px solid #444242;
+    /* Optional: Add a border for separation */
+    border-radius: 7px;
+    /* Optional: Add border-radius for rounded corners */
+    /* Adjust the percentage value for responsive margin */
+}
+
+@media screen and (max-width: 767.98px) and (min-width: 575.98px) {
+    .textP {
+        font-size: .9rem;
+    }
+
+    .ServiceTitle h2 {
+        font-size: 1.5rem;
+    }
+}
 
 @media only screen and (max-width: 575.98px) {
     .ag-courses_item {
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    }
+
+    .textP {
+        font-size: .5rem;
     }
 
     .workTitle h2 {
