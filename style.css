@@ -461,17 +461,20 @@ h1 {
 .OurService {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+    padding: 15vh 0vh;
 }
 
 .ServiceTitle h2 {
 
     font-family: 'Amiri', serif;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 5rem;
     color: #f5f5f5;
     padding: 2rem 2rem;
+    line-height: 1.5;
+
 }
 
 .owl-nav {
@@ -720,8 +723,13 @@ h1 {
         /* Maintain aspect ratio */
     }
 
+    .navbar {
+        background-color: #292c556a;
+    }
+
     .navbar-collapse {
         justify-content: center;
+
     }
 
     .navbar-nav {
@@ -750,7 +758,7 @@ h1 {
     }
 
     .navbar-nav .nav-item .nav-link {
-        color: #000000;
+        color: #dbdbdb;
     }
 
     .navbar-brand {
@@ -780,7 +788,7 @@ h1 {
 
     .rowy {
         flex-wrap: nowrap;
-        padding: 5% 1%;
+        padding: 15% 3%;
     }
 
     .logo-container {
@@ -836,6 +844,52 @@ h1 {
     }
 }
 
+.mainwho {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+.clip-text h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    text-align: center;
+    color: #0e3c43;
+
+    @supports (background-clip:text) or (-webkit-background-clip:text) {
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-image: url(Assets/1500x500.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.clip-text p {
+    @supports (background-clip:text) or (-webkit-background-clip:text) {
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-image: url(Assets/partnericons/6.jpeg
+);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
+.textP {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    color: #FFF;
+    line-height: 2.5;
+}
+
 /* Add this CSS to your existing stylesheet or in a style tag in the head section */
 
 .owl-carousel.caro2 {
@@ -878,7 +932,7 @@ h1 {
     }
 
     .textP {
-        font-size: .5rem;
+        font-size: 1rem;
     }
 
     .workTitle h2 {
@@ -897,7 +951,7 @@ h1 {
     }
 
     .rowy {
-        padding: 90px 10px;
+        padding: 14vh 3vh;
     }
 
     .ag-courses-item_date-box {
@@ -928,12 +982,11 @@ h1 {
         font-size: 1rem;
     }
 
-    .rowy {
-        padding: 5% 2%;
-    }
 
 
 }
+
+
 
 @media only screen and (min-width: 1201px) {
     .pic {
@@ -941,13 +994,18 @@ h1 {
     }
 
     .rowy {
-        padding: 8% 3%;
+        padding: 12% 0%;
     }
 
     .rectangle {
         display: flex;
     }
 
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+
+    }
 }
 
 @keyframes fadeIn {

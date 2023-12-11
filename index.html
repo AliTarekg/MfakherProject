@@ -18,10 +18,12 @@
     <link rel="stylesheet" href="style.css" />
     <title>Hello, world!</title>
     <script src="https://kit.fontawesome.com/af3875cb90.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-lg sticky-top">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
             </a>
@@ -49,11 +51,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#ourActivity">انشطتنا</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">تواصل معنا</a>
-                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="#why">لماذا نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactUs">تواصل معنا</a>
                     </li>
                 </ul>
             </div>
@@ -87,8 +90,8 @@
                             بالاسس
                             الفنيه المبتكره بما يلبي تطلعات الجهات المنظمه </h2>
                         <div class="contactContainer">
-                            <a href="#ourWork">
-                                <button class="Contactbutton" type="button" id="#">تواصل معنا
+                            <a href="#contactUs">
+                                <button class="Contactbutton" type="button" id="#contactbtn">تواصل معنا
                                 </button>
                             </a>
                         </div>
@@ -104,45 +107,52 @@
         <div class="separator">
             <h2 class="fancy" style="--w: 50vw;--b:4px;--g: 40px" id="who">Who we are?</h2>
         </div>
-        <section class="OurService text-center" style="height: auto;" id="">
-            <div class=" row container " style="height: auto;">
-                <div class="ServiceTitle">
-                    <h2> هويتنا</h2>
-                    <p style="color: #ffffff;"> مؤسسة سعودية رائدة في تنظيم المعارض والمؤتمرات، متخذة من الابتكار
-                        والاحتراف ركيزتين أساسيتين. </p>
-                    <h2> رسالتنا</h2>
-                    <p style="color: #ffffff;"> نلتزم بتقديم تجارب استثنائية للعملاء، من خلال تنظيم معارض ومؤتمرات تفوق
-                        التوقعات وتعكس التميز في كل تفاصيلها. </p>
-                    <h2> هدفنا</h2>
-                    <p style="color: #ffffff;"> تحقيق النجاح المستدام من خلال الابتكار المستمر، وتعزيز الشراكات
-                        الاستراتيجية، وتحقيق الإستدامة وتعزيز مكانتنا كمؤسسة سعودية مرموقة في قطاع تنظيم المعارض
-                        والمؤتمرات. </p>
+        <section class="OurService text-center" style="height: auto;" id="aboutUs">
+            <div class=" row  container-fluid " style="height: auto;">
+
+
+                <div class="mainwho" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                    data-aos-duration="2000">
+                    <div class="col clip-text">
+                        <h1> هويتنا
+                        </h1>
+                        <p class="textP"> مؤسسة سعودية رائدة في تنظيم المعارض والمؤتمرات، متخذة من الابتكار والاحتراف
+                            ركيزتين
+                            أساسيتين.
+                        </p>
+
+                    </div>
                 </div>
+                <div class="mainwho" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000">
+                    <div class="col clip-text">
+                        <h1>رسالتنا </h1>
+                        <p class="textP"> نلتزم بتقديم تجارب استثنائية للعملاء، من خلال تنظيم معارض ومؤتمرات تفوق
+                            التوقعات وتعكس
+                            التميز في كل تفاصيلها.
+                        </p>
+                    </div>
+                </div>
+                <div class="mainwho" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <div class="col clip-text">
+                        <h1>اهدافنا</h1>
+                        <p class="textP"> تحقيق النجاح المستدام من خلال الابتكار المستمر، وتعزيز الشراكات الاستراتيجية،
+                            وتحقيق
+                            الإستدامة وتعزيز مكانتنا كمؤسسة
+                            سعودية مرموقة في قطاع تنظيم المعارض والمؤتمرات.</p>
+                    </div>
+                </div>
+            </div>
+
             </div>
         </section>
 
         <div class="separator">
             <h2 class="fancy" style="--w: 50vw;--b:4px;--g: 40px" id="ourServices">OUR SERVICE</h2>
         </div>
-        <section class="OurService text-center" style="height: auto;" id="">
-            <div class=" row container " style="height: 100vh;">
+        <section class="OurService text-center" style="height: auto;" id="serviceSection">
+            <div class=" row container " style="height: auto;">
                 <div class="ServiceTitle">
                     <h2> بعض الخدمات التي تقدمها الشركه</h2>
-
-                    <p class="text-white textP">قدمنا خدمات متنوعة للوزارات والجهات الحكومية، والهيئات، والشركات
-                        الرائدة. وكذلك المؤسسات التجارية
-                        ، والأفراد حيث قمنا
-                        بتنظيم وتنفيذ فعاليات متعددة لتلبية احتياجات عملائنا المتنوعة بأسلوب مبتكر واحترافي. تشمل تنظيم
-                        المعارض والمؤتمرات وورش
-                        العمل التفاعلية، حيث نسعى لتحقيق أهداف وتطلعات عملائنا بأسلوب يلائم الطابع الرسمي والاحترافي.
-                        وقدمنا حلولًا مخصصة لتعزيز الهوية الفريدة لكل عميل، سواء كانت إطلاق منتجات، حفلات تكريم، أو
-                        فعاليات ترويجية.
-                        وعلى مستوى المناسبات الخاصة قدمنا حفلات زفاف مميزة واحتفالات فردية تعكس أفراح ولحظات استثنائية،
-                        حيث نجمع بين الفخامة
-                        والتميز لخلق تجارب لا تنسى.
-
-                    </p>
-                    <p style="color: #ffffff;"> ( انقر علي الايقونه لتري امثله لاعمال سابقه ) </p>
                 </div>
                 <div class="ag-format-container">
                     <div class="ag-courses_box">
@@ -369,13 +379,26 @@
                         </div>
                     </div>
                 </div>
+                <p class="text-white textP">قدمنا خدمات متنوعة للوزارات والجهات الحكومية، والهيئات، والشركات
+                    الرائدة. وكذلك المؤسسات التجارية
+                    ، والأفراد حيث قمنا
+                    بتنظيم وتنفيذ فعاليات متعددة لتلبية احتياجات عملائنا المتنوعة بأسلوب مبتكر واحترافي. تشمل تنظيم
+                    المعارض والمؤتمرات وورش
+                    العمل التفاعلية، حيث نسعى لتحقيق أهداف وتطلعات عملائنا بأسلوب يلائم الطابع الرسمي والاحترافي.
+                    وقدمنا حلولًا مخصصة لتعزيز الهوية الفريدة لكل عميل، سواء كانت إطلاق منتجات، حفلات تكريم، أو
+                    فعاليات ترويجية.
+                    وعلى مستوى المناسبات الخاصة قدمنا حفلات زفاف مميزة واحتفالات فردية تعكس أفراح ولحظات استثنائية،
+                    حيث نجمع بين الفخامة
+                    والتميز لخلق تجارب لا تنسى.
+
+                </p>
             </div>
         </section>
         <div class="separator">
             <h2 class="fancy" style="--w: 50vw;--b:4px;--g: 40px" id="Partners">OUR Partners</h2>
         </div>
         <section class="OurService text-center" style="height: auto;" id="">
-            <div class="row container" style="height: 100vh;">
+            <div class="row container" style="height: auto;">
                 <div class="ServiceTitle">
                     <h2> شركاء النجاح </h2>
                     <h3 class="text-white textP"> نحن في مفاخر فخورون بشراكاتنا المميزة</h3>
@@ -401,6 +424,8 @@
                         <div class="item px-2"><img src="Assets/partnericons/19.png" alt="Partner"></div>
                         <div class="item px-2"><img src="Assets/partnericons/18.jpg" alt="Partner"></div>
                         <div class="item px-2"><img src="Assets/partnericons/20.jpg" alt="Partner"></div>
+                        <div class="item px-2"><img src="Assets/partnericons/21.jpeg" alt="Partner"></div>
+
                     </div>
                 </div>
             </div>
@@ -684,7 +709,7 @@
             </div>
         </div>
     </div>
-    <footer class="bg-dark text-center text-white">
+    <footer class="bg-dark text-center text-white" id="contactUs">
         <!-- Grid container -->
         <div class="container p-4 pb-0">
             <!-- Section: Social media -->
@@ -810,6 +835,13 @@
             // Submit the form using JavaScript
             this.submit();
         });
+    </script>
+    <!-- Add the AOS library script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init();
     </script>
 </body>
 
