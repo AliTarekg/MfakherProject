@@ -68,7 +68,13 @@
         </div>
     </nav>
     <header>
-
+        <div id="floatingChatButton" onclick="openChat()">
+            <img src="Assets/whatsapp-svgrepo-com.svg" alt="Chat">
+        </div>
+        <div id="chatBox" class="hidden">
+            <!-- Your chat content goes here -->
+            <p>Welcome to the chat!</p>
+        </div>
         <div id='home' style="height: auto;">
             <div class=" row rowy row-cols-2">
 
@@ -709,54 +715,71 @@
             </div>
         </div>
     </div>
-    <footer class="bg-dark text-center text-white" id="contactUs">
-        <!-- Grid container -->
-        <div class="container p-4 pb-0">
-            <!-- Section: Social media -->
+    <footer class="text-center text-white" style="background-color: #3f51b5" id="contactUs">
+        <div class="container-fluid">
+            <section>
+                <div class="row p-3" style="display: flex; align-items: center;">
+                    <div class="col-lg-2 mt-5 pb-3" style="margin-right : auto; text-decoration: none;">
+                        <h6 class="text-uppercase font-weight-bold p-2">
+                            <a href="#home" class="text-white" style="text-decoration: none;">Main</a>
+                        </h6>
+                        <h6 class="text-uppercase font-weight-bold p-2">
+                            <a href="#who" class="text-white" style="text-decoration: none;">Who we are</a>
+                        </h6>
+                        <h6 class="text-uppercase font-weight-bold p-2">
+                            <a href="#ourServices" class="text-white" style="text-decoration: none;">Services</a>
+                        </h6>
+                        <h6 class="text-uppercase font-weight-bold p-2">
+                            <a href="#Partners" class="text-white" style="text-decoration: none;">Partners</a>
+                        </h6>
+                        <h6 class="text-uppercase font-weight-bold p-2">
+                            <a href="#ourActivity" class="text-white" style="text-decoration: none;">our activities</a>
+                        </h6>
+                        <h6 class="text-uppercase font-weight-bold p-2">
+                            <a href="#why" class="text-white" style="text-decoration: none;">Why Mafakher</a>
+                        </h6>
+                    </div>
+                    <div class="col-lg-6">
+                        <form id="contactForm" action="https://formspree.io/f/meqbyrkw" method="POST"
+                            class="contact-form">
+                            <h5 class="title">Contact us</h5>
+                            <p class="description">Feel free to contact us if you need any assistance,
+                                any help or another question. </p>
+                            <div><input type="text" class="form-control rounded border-white mb-3 form-input" id="name"
+                                    placeholder="Name" required></div>
+                            <div><input type="email" class="form-control rounded border-white mb-3 form-input"
+                                    placeholder="Email" required></div>
+                            <div><textarea id="message" class="form-control rounded border-white mb-3 form-text-area"
+                                    rows="5" cols="30" placeholder="Message" required></textarea></div>
+                            <div class="submit-button-wrapper"><input type="submit" value="Send"></div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
             <section class="mb-4">
-                <!-- Facebook -->
                 <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
                         class="fab fa-facebook-f"></i></a>
-
-                <!-- Twitter -->
                 <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
                     <i class="fab fa-twitter"></i>
-                    <!-- Google -->
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                            class="fab fa-google"></i></a>
-
-                    <!-- Instagram -->
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                            class="fab fa-instagram"></i></a>
-
-
-                    <a class="btn btn-outline-light btn-floating m-1"
-                        href="https://www.tiktok.com/@mafakheer?_t=8i2V7mxIanq&_r=1 " target="_blank" role="button"><i
-                            class="fa-brands fa-tiktok"></i></a>
+                </a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1"
+                    href="https://www.tiktok.com/@mafakheer?_t=8i2V7mxIanq&_r=1 " target="_blank" role="button"><i
+                        class="fa-brands fa-tiktok"></i></a>
             </section>
-            <!-- Section: Social media -->
         </div>
-        <!-- Grid container -->
-        <h2>Contact Us</h2>
-        <form id="contactForm" action="https://formspree.io/f/meqbyrkw" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea><br>
-
-            <button type="submit">Submit</button>
-        </form>
-
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            2023 Copyright:
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2023 Copyright:
             <a class="text-white" href="https://www.linkedin.com/in/atarekg/" target="_blank">Ali Tarek</a>
-            <!-- Copyright -->
+        </div>
     </footer>
+    <!-- Footer -->
+
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
         var $ = jQuery.noConflict();
@@ -840,8 +863,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
     <!-- Initialize AOS -->
+    <script>        AOS.init();
+    </script>
     <script>
-        AOS.init();
+        document.addEventListener("DOMContentLoaded", function () {
+            var chatBox = document.getElementById("chatBox");
+            var floatingChatButton = document.getElementById("floatingChatButton");
+
+            window.onscroll = function () {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    floatingChatButton.classList.add("show");
+                } else {
+                    floatingChatButton.classList.remove("show");
+                }
+            };
+
+            // Open chat box
+            floatingChatButton.addEventListener("click", function () {
+                chatBox.classList.toggle("hidden");
+            });
+        });
+
     </script>
 </body>
 
