@@ -35,28 +35,28 @@
             <div class="collapse navbar-collapse " id="navbarNav">
                 <ul class="navbar-nav mx-auto ">
                     <li class="nav-item">
-                        <a class="nav-link " href="#home">الرئيسيه</a>
+                        <a class="nav-link " href="#home" onclick="closeNavbar()">الرئيسيه</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#who">من نحن</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#ourServices">خدماتنا</a>
+                        <a class="nav-link" href="#who" onclick="closeNavbar()">من نحن</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#Partners">شركاؤنا</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#ourActivity">انشطتنا</a>
+                        <a class="nav-link" href="#ourServices" onclick="closeNavbar()">خدماتنا</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#why">لماذا نحن</a>
+                        <a class="nav-link" href="#Partners" onclick="closeNavbar()">شركاؤنا</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contactUs">تواصل معنا</a>
+                        <a class="nav-link" href="#ourActivity" onclick="closeNavbar()">انشطتنا</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#why" onclick="closeNavbar()">لماذا نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactUs" onclick="closeNavbar()">تواصل معنا</a>
                     </li>
                 </ul>
             </div>
@@ -77,31 +77,39 @@
             <h3></h3>
         </div>
         <div id='home' style="height: auto;">
-            <div class=" row rowy row-cols-2">
+            <div class=" row rowy row-cols-2" style="height: auto;">
 
-                <div class="col pic hovery">
+                <div class="col pic">
                     <div class="pic">
                         <img class="animate-img" src="Assets/logo.jpg" alt="">
                     </div>
                 </div>
                 <div class="col  rectangle">
                     <div class="intro text-center">
-                        <h2>نفخر بكوننا مؤسسه سعوديه رائده ذات منظور تطويري في مجال صناعة الفعاليات واداراتها
-                            ومتخصصين في تقديم
-                            كافة خدمات تنظيم وتنفيذ المعارض والمؤتمرات وادارة الفعاليات والحفلات داخل المملكه العربيه
-                            السعوديه
-                            بسواعد شبابنا الملهمه وكفاءاتناالطموحه المؤثره مع الالتزام بارقي مستويات الجوده في توفير
-                            كافة
-                            الخدمات التنظيميه نبني الحدث ابتداءا من الفكره والتصميم وصولا الي البناء والتنفيذ
-                            والالتزام
-                            بالاسس
-                            الفنيه المبتكره بما يلبي تطلعات الجهات المنظمه </h2>
-                        <div class="contactContainer">
+                        <h1 class="text-white">مرحبًا بك في مفاخر المؤسسة السعودية الرائدة في تنظيم الفعاليات
+                            وإدارتها</h1>
+                        <h2>
+                            نفتخر
+                            بكوننا
+                            فريقًا متخصصًا وملهمًا في مجال صناعة الفعاليات داخل المملكة العربية السعودية. بسواعد شبابنا
+                            الملهمة وكفائتنا الطموحة، نلتزم بتقديم خدمات تنظيم وتنفيذ المعارض والمؤتمرات والضيافة
+                            والحفلات بأعلى مستويات الجودة والإبداع. "مفاخر" ليست مجرد مؤسسة، بل هي تحفة فنية بُنيت بأيدي
+                            سعودية، تعكس الروح الإبداعية والرؤية التطويرية لشباب هذا الوطن الطموح. نحن هنا لتحويل
+                            احتياجاتكم ورغباتكم إلى لحظات فريدة، سواء كانت حفلات خاصة أو فعاليات تجارية. اختيار "مفاخر"
+                            يعني اختيار التميز والاهتمام بأدق التفاصيل. دعونا نكون جزءًا من لحظاتكم الخاصة ولنحقق لكم
+                            تجربة لا تُنسى. مرحبًا بكم في عالم الفخامة والاحترافية، حيث تتجسد فيه "مفاخر" رمزًا للتميز
+                            والابتكار. بُنيت "مفاخر" بأيدي سعودية، وهي قصة نجاح تعكس إلتزامنا بالتفرد والتميز. مع تاريخ
+                            حافل في تقديم الفعاليات ذات الجودة العالية، نعدكم بتوفير تجربة لا مثيل لها. اختيار "مفاخر"
+                            يضمن لكم مستوى خدمة لا يضاهى وضمان تحقيق كل توقعاتكم بأعلى درجات الكمال. انطلقوا معنا في
+                            رحلة حيث يتحقق الأحلام! </h2>
+                        <!--
+                            <div class="contactContainer">
                             <a href="#contactUs">
                                 <button class="Contactbutton" type="button" id="#contactbtn">تواصل معنا
                                 </button>
                             </a>
                         </div>
+                        -->
                     </div>
 
                 </div>
@@ -112,7 +120,7 @@
 
     <main>
         <div class="separator">
-            <h2 class="fancy" style="--w: 50vw;--b:4px;--g: 40px" id="who">Who we are?</h2>
+            <h2 class="fancy" style="--w: 50vw;--b:4px;--g: 40px" id="who">من نحن</h2>
         </div>
         <section class="OurService text-center" style="height: auto;" id="aboutUs">
             <div class=" row  container-fluid " style="height: auto;">
@@ -121,31 +129,38 @@
                 <div class="mainwho" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
                     data-aos-duration="2000">
                     <div class="col clip-text">
-                        <h1> هويتنا
-                        </h1>
-                        <p class="textP"> مؤسسة سعودية رائدة في تنظيم المعارض والمؤتمرات، متخذة من الابتكار والاحتراف
-                            ركيزتين
-                            أساسيتين.
-                        </p>
-
+                        <div class="card1">
+                            <h1> هويتنا
+                            </h1>
+                            <p class="textP"> مؤسسة سعودية رائدة في تنظيم المعارض والمؤتمرات، متخذة من الابتكار
+                                والاحتراف
+                                ركيزتين
+                                أساسيتين.
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="mainwho" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000">
                     <div class="col clip-text">
-                        <h1>رسالتنا </h1>
-                        <p class="textP"> نلتزم بتقديم تجارب استثنائية للعملاء، من خلال تنظيم معارض ومؤتمرات تفوق
-                            التوقعات وتعكس
-                            التميز في كل تفاصيلها.
-                        </p>
+                        <div class="card2">
+                            <h1>رسالتنا </h1>
+                            <p class="textP"> نلتزم بتقديم تجارب استثنائية للعملاء، من خلال تنظيم معارض ومؤتمرات تفوق
+                                التوقعات وتعكس
+                                التميز في كل تفاصيلها.
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="mainwho" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <div class="col clip-text">
-                        <h1>اهدافنا</h1>
-                        <p class="textP"> تحقيق النجاح المستدام من خلال الابتكار المستمر، وتعزيز الشراكات الاستراتيجية،
-                            وتحقيق
-                            الإستدامة وتعزيز مكانتنا كمؤسسة
-                            سعودية مرموقة في قطاع تنظيم المعارض والمؤتمرات.</p>
+                        <div class="card3">
+                            <h1>اهدافنا</h1>
+                            <p class="textP"> تحقيق النجاح المستدام من خلال الابتكار المستمر، وتعزيز الشراكات
+                                الاستراتيجية،
+                                وتحقيق
+                                الإستدامة وتعزيز مكانتنا كمؤسسة
+                                سعودية مرموقة في قطاع تنظيم المعارض والمؤتمرات.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -154,13 +169,11 @@
         </section>
 
         <div class="separator">
-            <h2 class="fancy" style="--w: 50vw;--b:4px;--g: 40px" id="ourServices">OUR SERVICE</h2>
+            <h2 class="fancy" style="--w: 50vw;--b:4px;--g: 40px" id="ourServices">خدماتنا</h2>
         </div>
         <section class="OurService text-center" style="height: auto;" id="serviceSection">
             <div class=" row container " style="height: auto;">
-                <div class="ServiceTitle">
-                    <h2> بعض الخدمات التي تقدمها الشركه</h2>
-                </div>
+
                 <div class="ag-format-container">
                     <div class="ag-courses_box">
                         <div class="owl-carousel secondry-owl caro1">
@@ -402,15 +415,14 @@
             </div>
         </section>
         <div class="separator">
-            <h2 class="fancy" style="--w: 50vw;--b:4px;--g: 40px" id="Partners">OUR Partners</h2>
+            <h2 class="fancy" style="--w: 50vw;--b:4px;--g: 40px" id="Partners">شركاؤنا</h2>
         </div>
         <section class="OurService text-center" style="height: auto;" id="">
-            <div class="row container" style="height: auto;">
+            <div class="row container  text-center" style="height: auto;">
                 <div class="ServiceTitle">
-                    <h2> شركاء النجاح </h2>
                     <h3 class="text-white textP"> نحن في مفاخر فخورون بشراكاتنا المميزة</h3>
                 </div>
-                <div class="container">
+                <div class="text-center">
                     <div class="owl-carousel owl-theme caro2">
                         <div class="item px-2"><img src="Assets/partnericons/1.jpeg" alt="Partner"></div>
                         <div class="item px-2"><img src="Assets/partnericons/2.png" alt="Partner"></div>
@@ -439,18 +451,16 @@
             </div>
         </section>
         <div class="separator">
-            <h2 class="fancy mb-5 mt-5" style="--w: 50vw;--b:4px;--g: 40px" id="ourActivity">Our Activities</h2>
+            <h2 class="fancy mb-5 mt-5" style="--w: 50vw;--b:4px;--g: 40px" id="ourActivity">انشطتنا</h2>
         </div>
         <section id="workSection" class="somework text-center" style="height: auto;">
 
             <div class="container-fluid ">
-                <div class="workTitle">
-                    <h2>الخدمات المقدمه</h2>
-                    <p class="textP"></p>
-                </div>
+
 
                 <div class="row justify-content-center">
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-down">
+
                         <div class="card">
                             <div class="card-body">
                                 <h3>تنظيم وإدارة المعارض والمؤتمرات</h3>
@@ -458,7 +468,8 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-down">
+
                         <div class="card">
                             <div class="card-body">
                                 <h3>تنظيم الفعاليات الترفيهية</h3>
@@ -466,7 +477,8 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-down">
+
                         <div class="card">
                             <div class="card-body">
                                 <h3>تنظيم وإدارة الحشود</h3>
@@ -474,7 +486,8 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-down">
+
                         <div class="card">
                             <div class="card-body">
                                 <h3>الدعاية والإعلان </h3>
@@ -485,7 +498,8 @@
 
 
 
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-down">
+
                         <div class="card">
                             <div class="card-body">
                                 <h3>تأجير لوازم المناسبات </h3>
@@ -493,7 +507,8 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-down">
+
                         <div class="card">
                             <div class="card-body">
                                 <h3>متعهدي الإعاشة بالحج والعمرة </h3>
@@ -502,7 +517,8 @@
                     </div>
 
 
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-down">
+
                         <div class="card">
                             <div class="card-body">
                                 <h3>أنشطة التنظيف والصيانة والتشغيل </h3>
@@ -510,7 +526,8 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-down">
+
                         <div class="card">
                             <div class="card-body">
                                 <h3>البيع بالجملة لمنتجات القهوة والشاي</h3>
@@ -519,7 +536,8 @@
                     </div>
 
 
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-down">
+
                         <div class="card">
                             <div class="card-body">
                                 <h3>تغليف الطرود والهدايا </h3>
@@ -527,7 +545,8 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-down">
+
                         <div class="card">
                             <div class="card-body">
                                 <h3>البيع بالجملة للحواسيب ومستلزماتها </h3>
@@ -536,7 +555,7 @@
                     </div>
 
 
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-down">
                         <div class="card">
                             <div class="card-body">
                                 <h3>أعمال الديكور والأثاث </h3>
@@ -544,7 +563,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-down">
                         <div class="card">
                             <div class="card-body">
                                 <h3>البيع بالتجزئة للزهور والورود</h3>
@@ -553,7 +572,7 @@
                     </div>
 
 
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-down">
                         <div class="card">
                             <div class="card-body">
                                 <h3>تقديم خدمات تسويقية نيابة عن الغير </h3>
@@ -567,7 +586,7 @@
 
         </section>
 
-        <h2 class="fancy mb-5 mt-5" style="--w: 50vw;--b:4px;--g: 40px" id="why">WHY MAFAKHER?</h2>
+        <h2 class="fancy mb-5 mt-5" style="--w: 50vw;--b:4px;--g: 40px" id="why"> لماذا مفاخر </h2>
 
 
         <section class="OurService text-center" style="height: auto;" id="aboutUs">
@@ -577,8 +596,6 @@
                 <div class="mainwho" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
                     data-aos-duration="2000">
                     <div class="col clip-text">
-                        <h1> لماذا مفاخر
-                        </h1>
                         <p class="textP">مفاخر من التخطيط حتى التنفيذ، تعين التميز بأسلوب فريد. اخرت أن تكون
                             مناسبتك حلظة تارخيية، اخرت مفاخر.
                             مفاخر مفخرة للحظات تارخيية حتمل بصمة الفرادة.
@@ -916,12 +933,17 @@
         </div>
     </footer>
     <!-- Footer -->
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
         var $ = jQuery.noConflict();
     </script>
-
+    <script>
+        function closeNavbar() {
+            $('.navbar-collapse').collapse('hide');
+        }
+    </script>
     <script>
         $(document).ready(function () {
             $('.caro2').owlCarousel({
@@ -934,11 +956,17 @@
                     0: {
                         items: 1
                     },
-                    600: {
+                    300: {
                         items: 3
                     },
-                    1000: {
+                    400: {
                         items: 4
+                    },
+                    600: {
+                        items: 5
+                    },
+                    1000: {
+                        items: 6
                     }
                 }
             });
@@ -962,6 +990,7 @@
                     600: {
                         items: 2
                     },
+
                     1000: {
                         items: 3
                     }
@@ -1015,12 +1044,25 @@
                 }
             };
 
-            // Open chat box
+            // Open WhatsApp chat
             floatingChatButton.addEventListener("click", function () {
-                chatBox.classList.toggle("hidden");
+                // Replace 'whatsappphonenumber' with your actual WhatsApp phone number
+                var phoneNumber = '+201124163912';
+
+                // Construct the WhatsApp link
+                var whatsappLink = 'https://wa.me/' + phoneNumber;
+
+                // Open the WhatsApp link in a new window or tab
+                window.open(whatsappLink, '_blank');
             });
         });
-
+    </script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 3000, // Animation duration
+            once: true, // Animation occurs only once
+        });
     </script>
 </body>
 
