@@ -3,9 +3,10 @@
 
 body {
     font-family: 'Amiri', sans-serif;
-    background-color: #292c55;
+    background-color: #264653;
     overflow-x: hidden;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -115,7 +116,6 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #292c55;
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
@@ -229,143 +229,6 @@ body {
     box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
 
-/*
-
-.buton {
-    color: #fffff4;
-}
-
-.buton:hover {
-    color: rgb(240, 240, 240);
-    /* Change text color to red on hover 
-
-
-.buton::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    left: -4px;
-    top: -1px;
-    margin: auto;
-    width: 128px;
-    height: 48px;
-    border-radius: 10px;
-    background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
-    z-index: -10;
-    pointer-events: none;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.buton::after {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
-    transform: translate3d(0, 0, 0) scale(1.95);
-    filter: blur(20px);
-}
-
-.buton:hover::after {
-    filter: blur(30px);
-}
-
-.buton:hover::before {
-    transform: rotate(-180deg);
-}
-
-.buton:active::before {
-    scale: 0.7;
-}
-
-
-.cardcontainer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: rgba(103, 103, 103, 0);
-    padding: 5% 5%;
-}
-
-.card {
-    position: relative;
-    background-color: #000;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    padding: 12px;
-    gap: 12px;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.card::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    left: -5px;
-    margin: auto;
-    border-radius: 10px;
-    background: linear-gradient(-45deg, #e81cff 0%, #09077f 100%);
-    z-index: -10;
-    pointer-events: none;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.card::after {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(-45deg, #fc00ff 0%, #2900de 100%);
-    transform: translate3d(0, 0, 0) scale(0.95);
-    filter: blur(20px);
-}
-
-.heading {
-    font-size: 20px;
-    text-transform: capitalize;
-    font-weight: 700;
-    color: #fff;
-}
-
-.card p:not(.heading) {
-    font-size: 14px;
-}
-
-.card p:last-child {
-    color: #e81cff;
-    font-weight: 600;
-}
-
-.card:hover::after {
-    filter: blur(30px);
-}
-
-.card:hover::before {
-    transform: rotate(-90deg) scaleX(.87) scaleY(1.4);
-}
-
-
-
-
-
-
-
-
-h1 {
-    font-family: "Arima Madurai", cursive;
-    color: black;
-    font-size: 4rem;
-    letter-spacing: -3px;
-    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.6);
-    position: relative;
-    z-index: 3;
-}
-
-*/
-
 
 
 #ourWork {
@@ -383,14 +246,6 @@ h1 {
     height: auto;
 }
 
-/*.workTitle h1 {
-    font-family: 'Amiri', serif;
-    font-weight: 700;
-    font-size: 3rem;
-    color: #16425B;
-    padding: 1rem 1rem;
-}
-*/
 .workTitle h2 {
     font-family: 'Amiri', serif;
     font-weight: 700;
@@ -592,7 +447,7 @@ h1 {
 .ag-courses-item_link {
     display: block;
     padding: 30px 20px;
-    background-color: #000000b4;
+    background-color: #2A9D8F;
     width: 100%;
     height: 30vh;
     overflow: hidden;
@@ -658,36 +513,10 @@ h1 {
     transition: all 1.5s ease;
 }
 
-.item1 .ag-courses-item_bg {
-    background-color: #c3a463;
-}
 
-.item2 .ag-courses-item_bg {
-    background-color: #c3a463;
-}
-
-.item3 .ag-courses-item_bg {
-    background-color: #c3a463;
-}
-
-.item4 .ag-courses-item_bg {
-    background-color: #c3a463;
-}
-
-.item5 .ag-courses-item_bg {
-    background-color: #c3a463;
-}
-
-.item6 .ag-courses-item_bg {
-    background-color: #c3a463;
-}
-
-.item7 .ag-courses-item_bg {
-    background-color: #c3a463;
-}
 
 .item8 .ag-courses-item_bg {
-    background-color: #c3a463;
+    background-color: #E9C46A;
 }
 
 .animate-img {
@@ -729,12 +558,11 @@ h1 {
         /* Maintain aspect ratio */
     }
 
-    .navbar {
-        background-color: #292c556a;
-    }
+    .navbar {}
 
     .navbar-collapse {
         justify-content: center;
+        background-color: #c3a463;
 
     }
 
@@ -901,7 +729,7 @@ h1 {
 .owl-carousel.caro2 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .owl-carousel.caro2 .item {
@@ -910,13 +738,9 @@ h1 {
 }
 
 .owl-carousel.caro2 .item img {
-    max-width: 100%;
-    /* Ensure images don't exceed the width of the container */
-    height: 40vh;
-    /* Maintain the aspect ratio of the images */
-    border: 1px solid #444242;
+    border: 1px solid #a589f3;
     /* Optional: Add a border for separation */
-    border-radius: 7px;
+    border-radius: 10%;
     /* Optional: Add border-radius for rounded corners */
     /* Adjust the percentage value for responsive margin */
 }
@@ -1030,6 +854,31 @@ h1 {
     background-color: #00000061;
     color: #ffffff;
     margin: 10px 3px;
+    border-radius: 50px 50px;
+}
+
+.card1 {
+    background-color: #1abaa721;
+    color: #ffffff;
+    margin: 10px 3px;
+    padding: 1% 5%;
+    border-radius: 50px 10px;
+}
+
+.card2 {
+    background-color: #1e8277af;
+    color: #ffffff;
+    margin: 10px 3px;
+    padding: 1% 10%;
+    border-radius: 50px 10px;
+}
+
+.card3 {
+    background-color: #098f7f;
+    color: #ffffff;
+    margin: 10px 3px;
+    padding: 1% 5%;
+    border-radius: 50px 10px;
 }
 
 @media screen and (max-width: 767.98px) and (min-width: 575.98px) {
@@ -1115,11 +964,15 @@ h1 {
     }
 
     .rowy {
-        padding: 12% 0%;
+        padding: 6% 0%;
     }
 
     .rectangle {
         display: flex;
+    }
+
+    .rectangle .intro h2 {
+        font-size: 1.5rem;
     }
 
     .navbar-expand-lg .navbar-nav .nav-link {
