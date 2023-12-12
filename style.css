@@ -558,6 +558,7 @@ body {
         /* Maintain aspect ratio */
     }
 
+    .navbar {}
 
     .navbar-collapse {
         justify-content: center;
@@ -737,6 +738,8 @@ body {
 }
 
 .owl-carousel.caro2 .item img {
+    /* Ensure images don't exceed the width of the container */
+    /* Maintain the aspect ratio of the images */
     border: 1px solid #a589f3;
     /* Optional: Add a border for separation */
     border-radius: 10%;
