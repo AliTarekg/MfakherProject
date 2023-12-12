@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Arima+Madurai:300");
-@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;600;700&display=swap');
 
 body {
-    font-family: 'Amiri', sans-serif;
+    font-family: 'El Messiri', sans-serif;
     background-color: #264653;
     overflow-x: hidden;
     margin: 0;
@@ -13,7 +12,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Amiri', sans-serif;
+    font-family: 'El Messiri', sans-serif;
 }
 
 
@@ -126,7 +125,7 @@ body {
 .pic {
     display: flex;
     justify-content: center;
-    height: 35vh;
+    height: 30vh;
     width: 30%;
 }
 
@@ -553,7 +552,7 @@ body {
 
     .pic img {
         text-align: center;
-        height: 30vh;
+        height: 50%;
         /* Ensure the image doesn't overflow */
         /* Maintain aspect ratio */
     }
@@ -648,7 +647,7 @@ body {
 
     .pic img {
         text-align: center;
-        height: 30vh;
+        height: 50%;
         /* Ensure the image doesn't overflow */
         /* Maintain aspect ratio */
     }
@@ -883,6 +882,27 @@ body {
     border-radius: 50px 10px;
 }
 
+.mafakher-section {
+    background-color: #1e827635;
+    text-align: right;
+    padding: 50px 0;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.highlighted {
+    color: #e44d26;
+    /* Highlight color */
+    font-weight: bold;
+}
+
 @media screen and (max-width: 767.98px) and (min-width: 575.98px) {
     .textP {
         font-size: .9rem;
@@ -962,7 +982,8 @@ body {
 
 @media only screen and (min-width: 1201px) {
     .pic {
-        height: 30vh;
+        max-width: 50%;
+        height: 50%;
     }
 
     .rowy {
@@ -1014,4 +1035,27 @@ body {
     .separator {
         padding: 3% 4%;
     }
+}
+
+.contaiiii {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.column {
+    flex: 1;
+}
+
+.text-column {
+    text-align: right;
+}
+
+.image-column {
+    text-align: center;
+}
+
+.imgey {
+    max-width: 100%;
+    height: auto;
 }
