@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;600;700&display=swap');
 
-html {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+body {
     font-family: 'El Messiri', sans-serif;
+    background-color: #1D1E3B;
+    overflow-x: hidden;
+    margin: 0;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -14,12 +15,7 @@ html {
     font-family: 'El Messiri', sans-serif;
 }
 
-body {
-    font-family: 'El Messiri', sans-serif;
-    background-color: #1D1E3B;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-}
+
 
 .row {
     --bs-gutter-x: 0;
@@ -34,6 +30,7 @@ body {
 
 .navbar-collapse {
     flex-grow: 0;
+    direction: rtl;
 }
 
 .navbar-nav {
@@ -118,6 +115,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    height: 100vh;
     background-size: cover;
     background-attachment: fixed;
     flex-wrap: wrap;
@@ -131,11 +129,36 @@ body {
     width: 30%;
 }
 
+
 .rowy {
     padding: 5% 1%;
     height: auto;
 }
 
+.hovery {
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    transition: all 435ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.hovery:hover {
+    box-shadow: rgba(233, 233, 233, 0.927) 2px 8px 8px -5px;
+    transform: translate3d(3px, 6px, 0);
+    color: #fffcfc;
+}
+
+.hovery:focus {
+    box-shadow: #ffffff;
+}
 
 .rectangle {
     opacity: 0;
@@ -157,10 +180,11 @@ body {
     height: auto;
 }
 
-.rectangle .intro h4 {
+.rectangle .intro h2 {
     color: #ffffff;
-    line-height: 1.5;
-    font-size: 1.5rem;
+    direction: rtl;
+    line-height: 2;
+    font-size: 2rem;
     letter-spacing: 1px;
 }
 
@@ -421,7 +445,7 @@ body {
 
 .ag-courses-item_link {
     display: block;
-    padding: 9vh 0vh;
+    padding: 30px 20px;
     background-color: #07071c;
     width: 100%;
     height: 100%;
@@ -528,7 +552,158 @@ body {
 }
 
 /*media Quiries */
+@media only screen and (max-width: 1200.98px) {
+    .ag-courses_item {
+        -ms-flex-preferred-size: calc(50% - 30px);
+        flex-basis: calc(50% - 30px);
+    }
 
+    .ag-courses-item_title {
+        font-size: 24px;
+        height: 100%;
+    }
+
+    .fixed-top {
+        position: fixed;
+    }
+
+    .rowy {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar-toggler.collapsed {
+        margin-right: auto;
+        /* Adjust the left position as needed */
+        /* Adjust the top position as needed */
+    }
+
+    .pic img {
+        text-align: center;
+        height: 50%;
+        /* Ensure the image doesn't overflow */
+        /* Maintain aspect ratio */
+    }
+
+
+    .navbar-collapse {
+        justify-content: center;
+        background-color: #c3a463;
+
+    }
+
+    .navbar-nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        display: inline-block;
+        padding: 10px;
+    }
+
+    .navbar-brand {
+        display: none;
+        /* Hide the navbar brand */
+    }
+
+    .navbar-toggler {
+        order: 0;
+        /* Set the order to 0 (move to the beginning) */
+    }
+
+    .navbar-collapse {
+        order: -1;
+        /* Set the order to -1 (move to the beginning) */
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        color: #dbdbdb;
+    }
+
+    .navbar-brand {
+        margin-bottom: auto;
+        order: 0;
+    }
+
+    .signout-container {
+        margin-top: 10px;
+        /* Add margin for better spacing */
+    }
+
+    .rectangle {
+        width: 100%;
+        /* Adjust the width as needed */
+        height: auto;
+        padding: 1rem 1rem;
+    }
+
+    .rectangle .intro h2 {
+        font-size: 1rem;
+    }
+
+    #home {
+        height: 100vh;
+    }
+
+    .rowy {
+        flex-wrap: nowrap;
+        padding: 15% 3%;
+    }
+
+    .logo-container {
+        display: none;
+        /* Hide the container on screens less than 960px */
+    }
+
+    .workTitle h2 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .ag-format-container {
+        width: 96%;
+    }
+
+    .rowy {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .pic img {
+        text-align: center;
+        height: 50%;
+        /* Ensure the image doesn't overflow */
+        /* Maintain aspect ratio */
+    }
+
+    .carousel-item img {
+        height: 35vh;
+    }
+
+    .workTitle h1 {
+        font-size: 2rem;
+        margin: 5%;
+    }
+
+    .rectangle {
+        width: 100%;
+        /* Adjust the width as needed */
+        height: auto;
+        padding: 1rem 1rem;
+    }
+
+    .rectangle .intro h2 {
+        font-size: 1rem;
+    }
+
+    .pic {
+        order: -1;
+    }
+}
 
 .mainwho {
     display: flex;
@@ -540,7 +715,7 @@ body {
 
 
 .clip-text h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 700;
     text-align: center;
     color: #0e3c43;
@@ -704,7 +879,9 @@ body {
     display: none;
 }
 
-.mafakher-container {
+
+
+.mafakher-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -734,167 +911,8 @@ p {
 
 
 
-@media only screen and (max-width: 1200.98px) {
-    .ag-courses_item {
-        -ms-flex-preferred-size: calc(50% - 30px);
-        flex-basis: calc(50% - 30px);
-    }
-
-    .ag-courses-item_title {
-        font-size: 24px;
-        height: 100%;
-    }
-
-    .fixed-top {
-        position: fixed;
-    }
-
-    .rowy {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .navbar-toggler.collapsed {
-        margin-right: auto;
-        /* Adjust the left position as needed */
-        /* Adjust the top position as needed */
-    }
-
-    .pic img {
-        text-align: center;
-        height: 50%;
-        /* Ensure the image doesn't overflow */
-        /* Maintain aspect ratio */
-    }
 
 
-    .navbar-collapse {
-        justify-content: center;
-        background-color: #c3a463;
-
-    }
-
-    .navbar-nav {
-        width: 100%;
-        text-align: center;
-    }
-
-    .navbar-nav .nav-item {
-        display: inline-block;
-        padding: 10px;
-    }
-
-    .navbar-brand {
-        display: none;
-        /* Hide the navbar brand */
-    }
-
-    .navbar-toggler {
-        order: 0;
-        /* Set the order to 0 (move to the beginning) */
-    }
-
-    .navbar-collapse {
-        order: -1;
-        /* Set the order to -1 (move to the beginning) */
-    }
-
-    .navbar-nav .nav-item .nav-link {
-        color: #dbdbdb;
-    }
-
-    .navbar-brand {
-        margin-bottom: auto;
-        order: 0;
-    }
-
-    .signout-container {
-        margin-top: 10px;
-        /* Add margin for better spacing */
-    }
-
-    .rectangle {
-        width: 100%;
-        /* Adjust the width as needed */
-        height: auto;
-        padding: 1rem 1rem;
-    }
-
-    .rectangle .intro h2 {
-        font-size: 1rem;
-    }
-
-    #home {
-        height: 100vh;
-    }
-
-    .rowy {
-        flex-wrap: nowrap;
-        padding: 15% 3%;
-    }
-
-    .logo-container {
-        display: none;
-        /* Hide the container on screens less than 960px */
-    }
-
-    .workTitle h2 {
-        font-size: 2rem;
-    }
-}
-
-@media only screen and (max-width: 767.98px) {
-    .ag-format-container {
-        width: 96%;
-    }
-
-    .rowy {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .pic img {
-        text-align: center;
-        height: 50%;
-        /* Ensure the image doesn't overflow */
-        /* Maintain aspect ratio */
-    }
-
-    .carousel-item img {
-        height: 35vh;
-    }
-
-    .workTitle h1 {
-        font-size: 2rem;
-        margin: 5%;
-    }
-
-    .rectangle {
-        width: 100%;
-        /* Adjust the width as needed */
-        height: auto;
-        padding: 1rem 1rem;
-    }
-
-    .rectangle .intro h2 {
-        font-size: 1rem;
-    }
-
-    .pic {
-        order: -1;
-    }
-}
-
-@media screen and (max-width: 1200.98px) and (min-width: 992.98px) {
-
-    .navbar-collapse {
-        justify-content: center;
-        background-color: #c3a56300;
-
-    }
-}
 
 @media screen and (max-width: 767.98px) and (min-width: 575.98px) {
     .textP {
@@ -930,6 +948,8 @@ p {
 
         font-size: 24px;
     }
+
+    .ag-courses-item_link {}
 
     .rowy {
         padding: 14vh 0vh;
@@ -972,6 +992,7 @@ p {
 @media only screen and (min-width: 1201px) {
     .pic {
         max-width: 50%;
+        height: 50%;
     }
 
     .rowy {

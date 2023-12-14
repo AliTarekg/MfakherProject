@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 
 <head>
     <meta charset="utf-8" />
@@ -15,8 +15,8 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css" />
-    <title>MFAKHER</title>
+    <link rel="stylesheet" href="Arstyle.css" />
+    <title>مفاخر</title>
     <script src="https://kit.fontawesome.com/af3875cb90.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 
@@ -24,7 +24,7 @@
 
 <body>
     <nav class="navbar navbar-light navbar-expand-lg fixed-top">
-        <div class="container-fluid justify-content-center">
+        <div class="container-fluid">
             <a class="navbar-brand" href="#">
             </a>
             <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -35,32 +35,35 @@
             <div class="collapse navbar-collapse " id="navbarNav">
                 <ul class="navbar-nav mx-auto ">
                     <li class="nav-item">
-                        <a class="nav-link " href="#home" onclick="closeNavbar()">HOME</a>
+                        <a class="nav-link " href="#home" onclick="closeNavbar()">الرئيسيه</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#who" onclick="closeNavbar()">ABOUT US</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#ourServices" onclick="closeNavbar()">OUR SERVICE</a>
+                        <a class="nav-link" href="#who" onclick="closeNavbar()">من نحن</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#Partners" onclick="closeNavbar()">PARTNERS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#ourActivity" onclick="closeNavbar()">OUR ACTIVITES</a>
+                        <a class="nav-link" href="#ourServices" onclick="closeNavbar()">خدماتنا</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#why" onclick="closeNavbar()">WHY US</a>
+                        <a class="nav-link" href="#Partners" onclick="closeNavbar()">شركاؤنا</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contactUs" onclick="closeNavbar()">CONTACT US</a>
+                        <a class="nav-link" href="#ourActivity" onclick="closeNavbar()">انشطتنا</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#why" onclick="closeNavbar()">لماذا نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactUs" onclick="closeNavbar()">تواصل معنا</a>
                     </li>
                 </ul>
             </div>
-
+            <div class="signout-container">
+                <button class="btn logobutton" type="button" id="logobutton">مفاخر
+                </button>
+            </div>
         </div>
         </div>
     </nav>
@@ -71,52 +74,49 @@
         <div id='home' style="height: auto;">
             <div class=" row rowy row-cols-2" style="height: auto;">
                 <!---->
-
-                <div class="col  rectangle">
-                    <div class="intro text-white">
-                        <h4>
-                            Welcome to Mafakher, the leading Saudi organization in event planning and management. We
-                            take pride in being a
-                            specialized and inspiring team in the field of event industry within the Kingdom of Saudi
-                            Arabia. With the dedication of
-                            our motivated youth and our ambitious capabilities, we commit to delivering organizing and
-                            executing services for
-                            exhibitions, conferences, hospitality, and events at the highest levels of quality and
-                            creativity.
-                            "Mafakher" is not just an institution; it is an artistic masterpiece built by Saudi hands,
-                            reflecting the creative
-                            spirit and visionary development of the ambitious youth of this nation. We are here to
-                            transform your needs and desires
-                            into unique moments, whether they are private parties or business events. Choosing
-                            "Mafakher" means choosing excellence
-                            and attention to the finest details. Let us be part of your special moments and create an
-                            unforgettable experience for
-                            you.
-
-                            Welcome to the world of luxury and professionalism, where "Mafakher" embodies a symbol of
-                            excellence and innovation.
-                            Built by Saudi hands, "Mafakher" is a success story that reflects our commitment to
-                            uniqueness and distinction. With a
-                            rich history of delivering high-quality events, we promise to provide an unparalleled
-                            experience. Choosing "Mafakher"
-                            ensures you a level of service that is unmatched, guaranteeing the realization of all your
-                            expectations with the highest
-                            degree of perfection. Embark with us on a journey where dreams come true! </h4>
-                    </div>
-
-                </div>
                 <div class="col pic">
                     <div class="pic">
                         <img class="animate-img" src="Assets/logo.jpg" alt="">
                     </div>
                 </div>
+                <div class="col  rectangle">
+                    <div class="intro text-center">
+                        <h2>
+
+                            مرحبًا بك في مفاخر المؤسسة السعودية الرائدة في تنظيم الفعاليات
+                            وإدارتها
+                            نفتخر
+                            بكوننا
+                            فريقًا متخصصًا وملهمًا في مجال صناعة الفعاليات داخل المملكة العربية السعودية. بسواعد شبابنا
+                            الملهمة وكفائتنا الطموحة، نلتزم بتقديم خدمات تنظيم وتنفيذ المعارض والمؤتمرات والضيافة
+                            والحفلات بأعلى مستويات الجودة والإبداع. "مفاخر" ليست مجرد مؤسسة، بل هي تحفة فنية بُنيت بأيدي
+                            سعودية، تعكس الروح الإبداعية والرؤية التطويرية لشباب هذا الوطن الطموح. نحن هنا لتحويل
+                            احتياجاتكم ورغباتكم إلى لحظات فريدة، سواء كانت حفلات خاصة أو فعاليات تجارية. اختيار "مفاخر"
+                            يعني اختيار التميز والاهتمام بأدق التفاصيل. دعونا نكون جزءًا من لحظاتكم الخاصة ولنحقق لكم
+                            تجربة لا تُنسى. مرحبًا بكم في عالم الفخامة والاحترافية، حيث تتجسد فيه "مفاخر" رمزًا للتميز
+                            والابتكار. بُنيت "مفاخر" بأيدي سعودية، وهي قصة نجاح تعكس إلتزامنا بالتفرد والتميز. مع تاريخ
+                            حافل في تقديم الفعاليات ذات الجودة العالية، نعدكم بتوفير تجربة لا مثيل لها. اختيار "مفاخر"
+                            يضمن لكم مستوى خدمة لا يضاهى وضمان تحقيق كل توقعاتكم بأعلى درجات الكمال. انطلقوا معنا في
+                            رحلة حيث يتحقق الأحلام! </h2>
+                        <!--
+                            <div class="contactContainer">
+                            <a href="#contactUs">
+                                <button class="Contactbutton" type="button" id="#contactbtn">تواصل معنا
+                                </button>
+                            </a>
+                        </div>
+                        -->
+                    </div>
+
+                </div>
+
             </div>
         </div>
     </header>
 
     <main>
         <div class="separator">
-            <h2 class="fancy" style="--w: 50vw;--b:4px;--g: 40px" id="who">ABOUT US</h2>
+            <h2 class="fancy" style="--w: 50vw;--b:4px;--g: 40px" id="who">من نحن</h2>
         </div>
         <section class="OurService text-center" style="height: auto;" id="aboutUs">
             <div class=" row  container-fluid " style="height: auto;">
@@ -126,12 +126,12 @@
                     data-aos-duration="2000">
                     <div class="col clip-text">
                         <div class="card1">
-                            <h1> OUR IDENTITY
+                            <h1> هويتنا
                             </h1>
-                            <p class="textP"> A leading Saudi institution in organizing exhibitions and conferences,
-                                relying on innovation and professionalism as its
-                                two fundamental pillars.
-
+                            <p class="textP"> مؤسسة سعودية رائدة في تنظيم المعارض والمؤتمرات، متخذة من الابتكار
+                                والاحتراف
+                                ركيزتين
+                                أساسيتين.
                             </p>
                         </div>
                     </div>
@@ -139,11 +139,10 @@
                 <div class="mainwho" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000">
                     <div class="col clip-text">
                         <div class="card2">
-                            <h1>OUR MISSION</h1>
-                            <p class="textP">We are committed to providing exceptional experiences for our clients by
-                                organizing exhibitions and conferences that
-                                exceed expectations and reflect excellence in every detail.
-
+                            <h1>رسالتنا </h1>
+                            <p class="textP"> نلتزم بتقديم تجارب استثنائية للعملاء، من خلال تنظيم معارض ومؤتمرات تفوق
+                                التوقعات وتعكس
+                                التميز في كل تفاصيلها.
                             </p>
                         </div>
                     </div>
@@ -151,12 +150,12 @@
                 <div class="mainwho" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <div class="col clip-text">
                         <div class="card3">
-                            <h1>OUR GOALS</h1>
-                            <p class="textP">"Achieving sustainable success through continuous innovation, enhancing
-                                strategic partnerships, and attaining
-                                sustainability to strengthen our position as a prestigious Saudi institution in the
-                                field of organizing exhibitions and
-                                conferences.</p>
+                            <h1>اهدافنا</h1>
+                            <p class="textP"> تحقيق النجاح المستدام من خلال الابتكار المستمر، وتعزيز الشراكات
+                                الاستراتيجية،
+                                وتحقيق
+                                الإستدامة وتعزيز مكانتنا كمؤسسة
+                                سعودية مرموقة في قطاع تنظيم المعارض والمؤتمرات.</p>
                         </div>
                     </div>
                 </div>
@@ -166,7 +165,7 @@
         </section>
 
         <div class="separator">
-            <h2 class="fancy" style="--w: 50vw;--b:4px;--g: 40px" id="ourServices">OUR SERVICES</h2>
+            <h2 class="fancy" style="--w: 50vw;--b:4px;--g: 40px" id="ourServices">خدماتنا</h2>
         </div>
         <section class="OurService text-center" style="height: auto;" id="serviceSection">
             <div class=" row container " style="height: auto;">
@@ -178,12 +177,10 @@
                                 <a href="#ourServices" class="ag-courses-item_link">
                                     <div class="ag-courses-item_bg"></div>
                                     <div class="ag-courses-item_title">
-
-                                        Organizing Exhibitions and Conferences"
+                                        تنظيم المعارض والمؤتمرات
                                     </div>
 
                                 </a>
-
                             </div>
 
 
@@ -191,7 +188,7 @@
                                 <a href="#ourServices" class="ag-courses-item_link">
                                     <div class="ag-courses-item_bg"></div>
                                     <div class="ag-courses-item_title">
-                                        Organizing and Managing Crowds</div>
+                                        تنظيم وادارة الحشود </div>
 
                                 </a>
                             </div>
@@ -200,7 +197,7 @@
                                 <a href="#ourServices" class="ag-courses-item_link">
                                     <div class="ag-courses-item_bg"></div>
                                     <div class="ag-courses-item_title">
-                                        Designing and Innovating Booth Identity</div>
+                                        تصميم وابتكار هوية الجناح </div>
 
                                 </a>
                             </div>
@@ -209,7 +206,7 @@
                                 <a href="#ourServices" class="ag-courses-item_link">
                                     <div class="ag-courses-item_bg"></div>
                                     <div class="ag-courses-item_title">
-                                        Display Screens </div>
+                                        شاشات العرض </div>
 
                                 </a>
                             </div>
@@ -218,7 +215,7 @@
                                 <a href="#ourServices" class="ag-courses-item_link">
                                     <div class="ag-courses-item_bg"></div>
                                     <div class="ag-courses-item_title">
-                                        Professional Theaters</div>
+                                        المسارح الاحترافيه </div>
 
                                 </a>
                             </div>
@@ -227,7 +224,7 @@
                                 <a href="#ourServices" class="ag-courses-item_link">
                                     <div class="ag-courses-item_bg"></div>
                                     <div class="ag-courses-item_title">
-                                        Lighting Systems </div>
+                                        انظمة الاضاءه </div>
 
                                 </a>
                             </div>
@@ -236,7 +233,7 @@
                                 <a href="#ourServices" class="ag-courses-item_link">
                                     <div class="ag-courses-item_bg"></div>
                                     <div class="ag-courses-item_title">
-                                        Sound Systems </div>
+                                        الانظمه الصوتيه </div>
 
                                 </a>
                             </div>
@@ -245,7 +242,7 @@
                                 <a href="#ourServices" class="ag-courses-item_link">
                                     <div class="ag-courses-item_bg"></div>
                                     <div class="ag-courses-item_title">
-                                        Photography, Media, and Television Broadcasting</div>
+                                        التصوير والاعلام والبث التلفزيوني</div>
 
                                 </a>
                             </div>
@@ -253,7 +250,7 @@
                                 <a href="#ourServices" class="ag-courses-item_link">
                                     <div class="ag-courses-item_bg"></div>
                                     <div class="ag-courses-item_title">
-                                        MARKETING</div>
+                                        التسويق</div>
 
                                 </a>
                             </div>
@@ -261,7 +258,7 @@
                                 <a href="#ourServices" class="ag-courses-item_link">
                                     <div class="ag-courses-item_bg"></div>
                                     <div class="ag-courses-item_title">
-                                        Advertising and Promotion Services</div>
+                                        خدمات الدعايه والاعلان</div>
 
                                 </a>
                             </div>
@@ -269,7 +266,7 @@
                                 <a href="#ourServices" class="ag-courses-item_link">
                                     <div class="ag-courses-item_bg"></div>
                                     <div class="ag-courses-item_title">
-                                        Guest Services</div>
+                                        خدمات الضيوف</div>
 
                                 </a>
                             </div>
@@ -277,7 +274,7 @@
                                 <a href="#ourServices" class="ag-courses-item_link">
                                     <div class="ag-courses-item_bg"></div>
                                     <div class="ag-courses-item_title">
-                                        Hospitality</div>
+                                        الضيافه</div>
 
                                 </a>
                             </div>
@@ -285,7 +282,7 @@
                                 <a href="#ourServices" class="ag-courses-item_link">
                                     <div class="ag-courses-item_bg"></div>
                                     <div class="ag-courses-item_title">
-                                        Arts and Folk Groups</div>
+                                        الفنون والفرق الشعبيه</div>
 
                                 </a>
                             </div>
@@ -293,7 +290,7 @@
                                 <a href="#ourServices" class="ag-courses-item_link">
                                     <div class="ag-courses-item_bg"></div>
                                     <div class="ag-courses-item_title">
-                                        Entertainment Events</div>
+                                        الفعاليات الترفيهيه</div>
 
                                 </a>
                             </div>
@@ -301,38 +298,35 @@
                                 <a href="#ourServices" class="ag-courses-item_link">
                                     <div class="ag-courses-item_bg"></div>
                                     <div class="ag-courses-item_title">
-                                        European Tents</div>
+                                        الخيام الاوروبيه</div>
 
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <p class="text-white textP pt-5">"We offer diverse services to ministries, government agencies,
-                    institutions, leading companies, commercial entities, and
-                    individuals. We have organized and executed various events to meet the diverse needs of our clients
-                    in an innovative and
-                    professional manner. Our services include organizing exhibitions, conferences, and interactive
-                    workshops. We strive to
-                    achieve the goals and aspirations of our clients with a formal and professional approach. We have
-                    provided customized
-                    solutions to enhance the unique identity of each client, whether it's product launches, award
-                    ceremonies, or promotional
-                    events. For special occasions, we have organized distinctive weddings and individual celebrations
-                    that reflect joy and
-                    exceptional moments, combining luxury and excellence to create unforgettable experiences.
+                <p class="text-white textP pt-5">دمنا خدمات متنوعة للوزارات والجهات الحكومية، والهيئات، والشركات
+                    الرائدة. وكذلك المؤسسات التجارية
+                    ، والأفراد حيث قمنا
+                    بتنظيم وتنفيذ فعاليات متعددة لتلبية احتياجات عملائنا المتنوعة بأسلوب مبتكر واحترافي. تشمل تنظيم
+                    المعارض والمؤتمرات وورش
+                    العمل التفاعلية، حيث نسعى لتحقيق أهداف وتطلعات عملائنا بأسلوب يلائم الطابع الرسمي والاحترافي.
+                    وقدمنا حلولًا مخصصة لتعزيز الهوية الفريدة لكل عميل، سواء كانت إطلاق منتجات، حفلات تكريم، أو
+                    فعاليات ترويجية.
+                    وعلى مستوى المناسبات الخاصة قدمنا حفلات زفاف مميزة واحتفالات فردية تعكس أفراح ولحظات استثنائية،
+                    حيث نجمع بين الفخامة
+                    والتميز لخلق تجارب لا تنسى.
 
                 </p>
             </div>
         </section>
         <div class="separator">
-            <h2 class="fancy" style="--w: 50vw;--b:4px;--g: 40px" id="Partners">OUR PARTNERS</h2>
+            <h2 class="fancy" style="--w: 50vw;--b:4px;--g: 40px" id="Partners">شركاؤنا</h2>
         </div>
         <section class="OurService text-center" style="height: auto;  min-height: auto;" id="">
             <div class="row container  text-center" style="height: auto;">
                 <div class="ServiceTitle">
-                    <h3 class="text-white textP"> "We, at Mafakher, take pride in our distinctive partnerships."
-                    </h3>
+                    <h3 class="text-white textP"> نحن في مفاخر فخورون بشراكاتنا المميزة</h3>
                 </div>
                 <div class="text-center">
                     <div class="owl-carousel owl-theme caro2">
@@ -363,18 +357,114 @@
             </div>
         </section>
         <div class="separator">
-            <h2 class="fancy mb-5 mt-5" style="--w: 50vw;--b:4px;--g: 40px" id="ourActivity">OUR ACTIVITES</h2>
+            <h2 class="fancy mb-5 mt-5" style="--w: 50vw;--b:4px;--g: 40px" id="ourActivity">انشطتنا</h2>
         </div>
         <section id="workSection" class="somework text-center" style="height: auto;">
 
-            <div class="container-fluid">
+            <div class="container-fluid ">
 
 
-                <div class="row justify-content-center" style="align-items: center;">
+                <div class="row justify-content-center">
+                    <div class="col-md-3">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>تنظيم وإدارة المعارض والمؤتمرات</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>تنظيم الفعاليات الترفيهية</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>تنظيم وإدارة الحشود</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>الدعاية والإعلان </h3>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-md-3">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>تأجير لوازم المناسبات </h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>متعهدي الإعاشة بالحج والعمرة </h3>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>أنشطة التنظيف والصيانة والتشغيل </h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>البيع بالجملة لمنتجات القهوة والشاي</h3>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>تغليف الطرود والهدايا </h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>البيع بالجملة للحواسيب ومستلزماتها </h3>
+                            </div>
+                        </div>
+                    </div>
+
+
                     <div class="col-md-3">
                         <div class="card">
                             <div class="card-body">
-                                <h3>Exhibitions and Conferences Organization and Management</h3>
+                                <h3>أعمال الديكور والأثاث </h3>
                             </div>
                         </div>
                     </div>
@@ -382,166 +472,80 @@
                     <div class="col-md-3">
                         <div class="card">
                             <div class="card-body">
-                                <h3>Entertainment Events Organization</h3>
+                                <h3>البيع بالتجزئة للزهور والورود</h3>
                             </div>
                         </div>
                     </div>
+
 
                     <div class="col-md-3">
                         <div class="card">
                             <div class="card-body">
-                                <h3>Crowd Management and Organization</h3>
+                                <h3>تقديم خدمات تسويقية نيابة عن الغير </h3>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3>Advertising and Promotion</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3>Event Supplies Rental</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3>Catering Contractors for Hajj and Umrah</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3>Cleaning, Maintenance, and Operation Activities</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3>Wholesale of Coffee and Tea Products</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3>Parcel and Gift Wrapping</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3>Wholesale of Computers and Accessories</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3>Decoration and Furniture Works</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3>Retail Sale of Flowers and Roses</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3>Providing Marketing Services on Behalf of Others</h3>
-                            </div>
-                        </div>
-                    </div>
-
 
 
                 </div>
             </div>
+
         </section>
 
-        <h2 class="fancy mb-5 mt-5" style="--w: 50vw;--b:4px;--g: 40px" id="why"> WHY MAFAKHER </h2>
+        <h2 class="fancy mb-5 mt-5" style="--w: 50vw;--b:4px;--g: 40px" id="why"> لماذا مفاخر </h2>
 
 
         <section class="mafakher-section">
-            <div class="container mafakher-container">
-                <div class="glass-card" data-aos="fade-right">
-                    <div class="card-content">
-                        <div class="blurred"></div>
-                        <span>01</span>
-                        <p>Mofakher, from planning to execution, means excellence with a unique style. Choose to make
-                            your
-                            event a historic
-                            moment, choose Mofakher.</p>
-                    </div>
+            <div class="glass-card" data-aos="fade-right">
+                <div class="card-content">
+                    <div class="blurred"></div>
+                    <span>01</span>
+                    <p>مفاخر من التخطيط حتى التنفيذ، تعني التميز بأسلوب فريد. اختر أن تكون مناسبتك لحظة تاريخية، اختر
+                        مفاخر.</p>
                 </div>
-                <div class="glass-card" data-aos="fade-left">
-                    <div class="card-content">
-                        <div class="blurred"></div>
-                        <span>02</span>
-                        <p>Mofakher, a pride for historical moments that carry the imprint of uniqueness.</p>
-                    </div>
+            </div>
+            <div class="glass-card" data-aos="fade-left">
+                <div class="card-content">
+                    <div class="blurred"></div>
+                    <span>02</span>
+                    <p>مفاخر مفخرة للحظات تاريخية تحمل بصمة الفرادة.</p>
                 </div>
-                <div class="glass-card " data-aos="fade-up">
-                    <div class="card-content">
-                        <div class="blurred"></div>
-                        <span>03</span>
-                        <p>Mofakher, from unparalleled planning to amazing execution, choose the exceptional.</p>
-                    </div>
+            </div>
+            <div class="glass-card " data-aos="fade-up">
+                <div class="card-content">
+                    <div class="blurred"></div>
+                    <span>03</span>
+                    <p>مفاخر من تخطيط لا مثيل له إلى تنفيذ مدهش، اختر الاستثنائية.</p>
                 </div>
-                <div class="glass-card " data-aos="fade-down">
-                    <div class="card-content">
-                        <div class="blurred"></div>
-                        <span>04</span>
-                        <p>Mofakher, when excellence meets organization, luxurious events witness the light of
-                            innovation.
-                        </p>
-                    </div>
+            </div>
+            <div class="glass-card " data-aos="fade-down">
+                <div class="card-content">
+                    <div class="blurred"></div>
+                    <span>04</span>
+                    <p>مفاخر حينما يلتقي التميز بالتنظيم، ترى الفعاليات الفاخرة نور الابتكار.</p>
                 </div>
-                <div class="glass-card" data-aos="fade-right">
-                    <div class="card-content">
-                        <div class="blurred"></div>
-                        <span>05</span>
-                        <p>Mofakher enlivens moments with exceptional style, from intricate details to meticulous
-                            execution,
-                            making each
-                            moment unique and distinctive from others.</p>
-                    </div>
+            </div>
+            <div class="glass-card" data-aos="fade-right">
+                <div class="card-content">
+                    <div class="blurred"></div>
+                    <span>05</span>
+                    <p>مفاخر تُحيي اللحظات بأسلوب استثنائي، من التفاصيل الدقيقة للتنفيذ المتقن، لتجعل كل
+                        لحظة فريدة ومميز
+                        عن غيرها.</p>
                 </div>
-                <div class="glass-card " data-aos="fade-left">
-                    <div class="card-content">
-                        <div class="blurred"></div>
-                        <span>06</span>
-                        <p>Mofakher, where ideas take shape and dreams turn into unparalleled reality.</p>
-                    </div>
+            </div>
+            <div class="glass-card " data-aos="fade-left">
+                <div class="card-content">
+                    <div class="blurred"></div>
+                    <span>06</span>
+                    <p>مفاخرحيث تتجسد الأفكار وتتحول الأحلام إلى حقيقة لا تُضاهى.</p>
                 </div>
-                <div class="glass-card " data-aos="fade-down">
-                    <div class="card-content">
-                        <div class="blurred"></div>
-                        <span>07</span>
-                        <p>Mofakher combines elegance and creativity to create unforgettable moments.</p>
-                    </div>
+            </div>
+            <div class="glass-card " data-aos="fade-down">
+                <div class="card-content">
+                    <div class="blurred"></div>
+                    <span>07</span>
+                    <p>مفاخر تجمع بين الرقي والإبداع لتخلق لحظات لا تُنسى.</p>
                 </div>
             </div>
         </section>
