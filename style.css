@@ -320,7 +320,8 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 4vh 0vh;
-}
+    min-height: 100vh;
+}   
 
 .ServiceTitle h2 {
 
@@ -437,7 +438,6 @@ body {
     flex-basis: calc(33.33333% - 30px);
 
     margin: 0 15px 30px;
-
     overflow: hidden;
 
     border-radius: 28px;
@@ -448,7 +448,7 @@ body {
     padding: 30px 20px;
     background-color: #07071c;
     width: 100%;
-    height: 30vh;
+    height: 100%;
     overflow: hidden;
     text-decoration: none;
     position: relative;
@@ -458,6 +458,17 @@ body {
 .ag-courses-item_link:hover .ag-courses-item_date {
     text-decoration: none;
     color: #FFF;
+}
+
+.col-md-3 {
+    margin: 2vw;
+
+}
+
+.card {
+    padding: 5vw 2vw;
+    max-height: 3vh;
+    justify-content: center;
 }
 
 .ag-courses-item_link:hover .ag-courses-item_bg {
@@ -537,6 +548,7 @@ body {
 
     .ag-courses-item_title {
         font-size: 24px;
+        height: 100%;
     }
 
     .fixed-top {
@@ -954,9 +966,7 @@ p {
         font-size: 24px;
     }
 
-    .ag-courses-item_link {
-        padding: 22px 40px;
-    }
+    .ag-courses-item_link {}
 
     .rowy {
         padding: 14vh 0vh;
@@ -1053,29 +1063,6 @@ p {
     }
 }
 
-.contaiiii {
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
-}
-
-.column {
-    flex: 1;
-}
-
-.text-column {
-    text-align: right;
-}
-
-.image-column {
-    text-align: center;
-}
-
-.imgey {
-    max-width: 100%;
-    height: auto;
-}
-
 /*
 glass card
 */
@@ -1142,9 +1129,3 @@ glass card
 }
 
 /* Media Query for larger screens */
-@media screen and (min-width: 768px) {
-    .glass-card {
-        left: 10%;
-        /* Adjust as needed for larger screens */
-    }
-}
