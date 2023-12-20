@@ -516,22 +516,20 @@ body {
     text-align: center;
     /* Use viewport height */
     color: #FFF;
-    width: 50%;
     /* Use viewport width */
     backdrop-filter: blur(3px);
 }
 
 .card {
-    padding: 5vw 0vw;
+    padding: 3vw 0vw;
     /* Use viewport width for padding */
     position: relative;
     width: 100%;
     height: 100%;
     border: 2px solid rgba(255, 255, 255, .4);
-    border-radius: 2vw;
     /* Use viewport width for border-radius */
     background: linear-gradient(135deg, transparent 0%, transparent 8%, rgba(255, 255, 255, 0.03) 30%, rgba(255, 255, 255, 0.03) 60%, rgba(255, 255, 255, 0) 68%);
-    border-radius: 0;
+    border-radius: 15px 50px;
 }
 
 .animate-img {
@@ -542,6 +540,237 @@ body {
 #contactUs {
     background-color: rgba(12, 12, 12, 0.26);
     /* You can adjust the alpha value as needed */
+}
+
+
+
+
+.textP {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    color: #FFF;
+    line-height: 2.5;
+}
+
+/* Add this CSS to your existing stylesheet or in a style tag in the head section */
+
+.owl-carousel.caro2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.owl-carousel.caro2 .item {
+    /* Set the width of each carousel item */
+    text-align: center;
+}
+
+.owl-carousel.caro2 .item img {
+    /* Ensure images don't exceed the width of the container */
+    /* Maintain the aspect ratio of the images */
+    border: 1px solid #a589f3;
+    /* Optional: Add a border for separation */
+    border-radius: 10%;
+    /* Optional: Add border-radius for rounded corners */
+    /* Adjust the percentage value for responsive margin */
+}
+
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form .form-input,
+.form-text-area {
+    background-color: #f0f4f5;
+    height: 50px;
+    padding-left: 16px;
+}
+
+.contact-form .form-text-area {
+    background-color: #f0f4f5;
+    height: auto;
+    padding-left: 16px;
+}
+
+.contact-form .form-control::placeholder {
+    color: #aeb4b9;
+    font-weight: 500;
+    opacity: 1;
+}
+
+.contact-form .form-control:-ms-input-placeholder {
+    color: #aeb4b9;
+    font-weight: 500;
+}
+
+.contact-form .form-control::-ms-input-placeholder {
+    color: #aeb4b9;
+    font-weight: 500;
+}
+
+.contact-form .form-control:focus {
+    border-color: #f33fb0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.07), 0 0 8px #f33fb0;
+}
+
+.contact-form .title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.contact-form .description {
+    color: #aeb4b9;
+    font-size: 14px;
+    text-align: center;
+}
+
+.contact-form .submit-button-wrapper {
+    text-align: center;
+}
+
+.contact-form .submit-button-wrapper input {
+    border: none;
+    border-radius: 4px;
+    background-color: #c3a463;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 60px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.contact-form .submit-button-wrapper input:hover {
+    background-color: #ffffff;
+}
+
+#floatingChatButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2b9a21af;
+    color: white;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+#chatBox {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 998;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+.mafakher-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.highlighted {
+    color: #e44d26;
+    /* Highlight color */
+    font-weight: bold;
+}
+
+/*
+glass card
+*/
+.glass-card {
+    margin-top: 1%;
+    text-align: center;
+    /* Use viewport height */
+    /* Use viewport width */
+    backdrop-filter: blur(3px);
+    width: 50%;
+    /* Use viewport width */
+}
+
+.blurred {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .15);
+    border-radius: 2vw;
+    /* Use viewport width for border-radius */
+    box-shadow: 2vw 2vw 2vw 0 rgba(0, 0, 0, 0.3);
+    /* Use viewport width for box-shadow */
+}
+
+.card-content {
+    padding: 5vw 2vw;
+    /* Use viewport width for padding */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(255, 255, 255, .4);
+    border-radius: 2vw;
+    /* Use viewport width for border-radius */
+    background: linear-gradient(135deg, transparent 0%, transparent 8%, rgba(255, 255, 255, 0.03) 30%, rgba(255, 255, 255, 0.03) 60%, rgba(255, 255, 255, 0) 68%);
+}
+
+.glass-card span {
+
+    font-size: 6.25vw;
+    /* Use viewport width for font-size */
+    color: rgba(255, 255, 255, .10);
+    font-weight: 700;
+}
+
+.glass-card h3 {
+    font-size: 2.2vw;
+    /* Use viewport width for font-size */
+    color: rgba(255, 255, 255, .85);
+}
+
+.glass-card p {
+    margin: 1em 0;
+    color: #fff;
+    line-height: 1.4;
+}
+
+.glass-card button {
+    border: 0 none;
+    font-size: 1.125em;
+    color: #444;
+    padding: 1vw 2vw;
+    /* Use viewport width for padding */
+    border-radius: 5vw;
+    /* Use viewport width for border-radius */
 }
 
 /*media Quiries */
@@ -712,179 +941,6 @@ body {
     }
 }
 
-
-
-.textP {
-    font-size: 1.5rem;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    color: #FFF;
-    line-height: 2.5;
-}
-
-/* Add this CSS to your existing stylesheet or in a style tag in the head section */
-
-.owl-carousel.caro2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.owl-carousel.caro2 .item {
-    /* Set the width of each carousel item */
-    text-align: center;
-}
-
-.owl-carousel.caro2 .item img {
-    /* Ensure images don't exceed the width of the container */
-    /* Maintain the aspect ratio of the images */
-    border: 1px solid #a589f3;
-    /* Optional: Add a border for separation */
-    border-radius: 10%;
-    /* Optional: Add border-radius for rounded corners */
-    /* Adjust the percentage value for responsive margin */
-}
-
-
-.contact-form textarea {
-    resize: none;
-}
-
-.contact-form .form-input,
-.form-text-area {
-    background-color: #f0f4f5;
-    height: 50px;
-    padding-left: 16px;
-}
-
-.contact-form .form-text-area {
-    background-color: #f0f4f5;
-    height: auto;
-    padding-left: 16px;
-}
-
-.contact-form .form-control::placeholder {
-    color: #aeb4b9;
-    font-weight: 500;
-    opacity: 1;
-}
-
-.contact-form .form-control:-ms-input-placeholder {
-    color: #aeb4b9;
-    font-weight: 500;
-}
-
-.contact-form .form-control::-ms-input-placeholder {
-    color: #aeb4b9;
-    font-weight: 500;
-}
-
-.contact-form .form-control:focus {
-    border-color: #f33fb0;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.07), 0 0 8px #f33fb0;
-}
-
-.contact-form .title {
-    text-align: center;
-    font-size: 24px;
-    font-weight: 500;
-}
-
-.contact-form .description {
-    color: #aeb4b9;
-    font-size: 14px;
-    text-align: center;
-}
-
-.contact-form .submit-button-wrapper {
-    text-align: center;
-}
-
-.contact-form .submit-button-wrapper input {
-    border: none;
-    border-radius: 4px;
-    background-color: #c3a463;
-    color: white;
-    text-transform: uppercase;
-    padding: 10px 60px;
-    font-weight: 500;
-    letter-spacing: 2px;
-}
-
-.contact-form .submit-button-wrapper input:hover {
-    background-color: #ffffff;
-}
-
-#floatingChatButton {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #2b9a21af;
-    color: white;
-    font-size: 20px;
-    width: 40px;
-    height: 40px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 999;
-}
-
-#chatBox {
-    position: fixed;
-    bottom: 70px;
-    right: 20px;
-    background-color: #fff;
-    color: #333;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 998;
-}
-
-.hidden {
-    display: none;
-}
-
-
-
-.mafakher-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 50px 0;
-}
-
-h2 {
-    color: #333;
-}
-
-p {
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-.highlighted {
-    color: #e44d26;
-    /* Highlight color */
-    font-weight: bold;
-}
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 767.98px) and (min-width: 575.98px) {
     .textP {
         font-size: .9rem;
@@ -1005,69 +1061,6 @@ p {
     }
 }
 
-/*
-glass card
-*/
-.glass-card {
-    margin-top: 1%;
-    text-align: center;
-    /* Use viewport height */
-    /* Use viewport width */
-    backdrop-filter: blur(3px);
-    width: 50%;
-    /* Use viewport width */
-}
 
-.blurred {
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, .15);
-    border-radius: 2vw;
-    /* Use viewport width for border-radius */
-    box-shadow: 2vw 2vw 2vw 0 rgba(0, 0, 0, 0.3);
-    /* Use viewport width for box-shadow */
-}
-
-.card-content {
-    padding: 5vw 2vw;
-    /* Use viewport width for padding */
-    position: relative;
-    width: 100%;
-    height: 100%;
-    border: 2px solid rgba(255, 255, 255, .4);
-    border-radius: 2vw;
-    /* Use viewport width for border-radius */
-    background: linear-gradient(135deg, transparent 0%, transparent 8%, rgba(255, 255, 255, 0.03) 30%, rgba(255, 255, 255, 0.03) 60%, rgba(255, 255, 255, 0) 68%);
-}
-
-.glass-card span {
-
-    font-size: 6.25vw;
-    /* Use viewport width for font-size */
-    color: rgba(255, 255, 255, .10);
-    font-weight: 700;
-}
-
-.glass-card h3 {
-    font-size: 2.2vw;
-    /* Use viewport width for font-size */
-    color: rgba(255, 255, 255, .85);
-}
-
-.glass-card p {
-    margin: 1em 0;
-    color: #fff;
-    line-height: 1.4;
-}
-
-.glass-card button {
-    border: 0 none;
-    font-size: 1.125em;
-    color: #444;
-    padding: 1vw 2vw;
-    /* Use viewport width for padding */
-    border-radius: 5vw;
-    /* Use viewport width for border-radius */
-}
 
 /* Media Query for larger screens */
