@@ -1015,8 +1015,9 @@ glass card
         display: flex;
     }
 
-    .rectangle .intro h2 {
+    .rectangle .intro h4 {
         font-size: 1.5rem;
+        padding: 1em;
     }
 
     .navbar-expand-lg .navbar-nav .nav-link {
